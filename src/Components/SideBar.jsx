@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const SideBar = () => {
   return (
     <>
-      <Menu text vertical>
+      <Menu text vertical className='side-menu'>
         <Menu.Item header
           id='my-name'
           name='Luca Lobacher'
