@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "My first Website",
+    "image": "",
+    "description": "One of my first projects was the Rock-Paper-Scissors challenge. You can choose between Rock, Paper or Scissor and the computer will make a random choice."
+  },
+  {
+    "id": 2,
+    "name": "The Newsroom App",
+    "image": "",
+    "description": "Working in a team we created a newsroom application called 'Fake News'."
+  },
+  {
+    "id": 3,
+    "name": "Wander Project",
+    "image": "",
+    "description": "This is my final project as I attended the Craft Academy Bootcamp."
+  }
+]
