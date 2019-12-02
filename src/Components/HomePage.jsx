@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutMe = () => {
+const HomePage = () => {
   return (
     <>
       
@@ -8,4 +8,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default HomePage
