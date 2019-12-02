@@ -7,8 +7,12 @@ const ProjectCard = (props) => {
   return (
     <>
       <Grid.Column>
-        <Card>
-          <Image src={project.image} />
+        <Card className='project-card'>
+          <Image 
+            src={project.image} 
+            object-fit='cover'
+            height='200px'
+          />
           <Card.Content>
             <Card.Header>{project.name}</Card.Header>
             <Card.Description>{project.description}</Card.Description>
