@@ -8,13 +8,17 @@ class Projects extends Component {
     projects: []
   }
 
-  componentDidMount() {
-    axios.get('../Data/projects.jsx')
-      .then(response => {
+  async componentDidMount() {
+    try { 
+      let response = await axios.get('/data/projects.json')
+      return (
         this.setState({
           projects: response.data
         })
-      })
+      )
+    } catch(error) {
+      console.log(error)
+    }    
   }
 
   render() {
