@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ProjectCard from './ProjectCard'
+import { Container, Grid } from 'semantic-ui-react'
 
 class Projects extends Component {
   state = {
@@ -32,7 +33,13 @@ class Projects extends Component {
 
     return (
       <>
-        {projectsList}
+        <Container>
+          <Grid centered container columns={3}>
+            <Grid.Row>
+              {projectsList}
+            </Grid.Row>
+          </Grid>
+        </Container>
       </>
     )
   }
