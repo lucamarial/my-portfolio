@@ -13,11 +13,13 @@ const SideBar = () => {
           to='/'
         />
         <Menu.Item
+          className='menu-item'
           name='About me'
           as={NavLink}
           to='/about'
         />
         <Menu.Item
+          className='menu-item'
           name='Projects'
           as={NavLink}
           to='/projects'
