@@ -20,3 +20,25 @@ code {
 .menu-item {
   font-size: 18px;
 }
+
+.side-menu {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.ui.vertical.menu {
+  width: 23rem !important;
+  margin-right: 1rem !important;
+}
+
+.project-card {
+  height: 350px;
+  margin: 2rem !important;
+}
+
+.ui.container.page-content {
+  margin-left: 23rem !important;
+  display: block;
+}
