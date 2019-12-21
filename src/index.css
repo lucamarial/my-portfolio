@@ -1,15 +1,10 @@
-body {
-  margin: 4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  /* margin: 4rem; */
+  font-family: 'Arimo', sans-serif;
+  word-wrap: break-word;
+  font-size: 120%;
 }
 
 #my-name {
@@ -23,9 +18,11 @@ code {
 
 .side-menu {
   height: 100%;
-  position: fixed;
+  padding: 2rem 0 0 2rem;
+  overflow-y: auto;
   z-index: 1;
   overflow-x: hidden;
+  background-color: white !important;
 }
 
 .ui.vertical.menu {
@@ -34,11 +31,19 @@ code {
 }
 
 .project-card {
-  height: 350px;
+  height: 390px;
   margin: 2rem !important;
 }
 
 .ui.container.page-content {
-  margin-left: 23rem !important;
+  margin-left: auto !important;
   display: block;
+}
+
+#about-img {
+  object-fit: cover;
+}
+
+#about-header {
+  font-size: 30px;
 }
