@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo&display=swap');
 
 body {
-  /* margin: 4rem; */
+  margin: 4rem;
   font-family: 'Arimo', sans-serif;
   word-wrap: break-word;
   font-size: 120%;
 }
+
+/* SideBar */
 
 #my-name {
   font-family: 'Baskervville', serif;
@@ -30,15 +32,19 @@ body {
   margin-right: 1rem !important;
 }
 
+/* Projects */
+
 .project-card {
   height: 390px;
   margin: 2rem !important;
 }
 
 .ui.container.page-content {
-  margin-left: auto !important;
+  margin-left: 23rem !important;
   display: block;
 }
+
+/* AboutMe */
 
 #about-img {
   object-fit: cover;
@@ -46,4 +52,11 @@ body {
 
 #about-header {
   font-size: 30px;
+}
+
+.ui.divider {
+  width: 4rem;
+  height: 2px;
+  background-color: black;
+  margin: 2rem 0 3rem
 }
