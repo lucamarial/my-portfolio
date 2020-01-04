@@ -21,7 +21,6 @@ body {
 .side-menu {
   height: 100%;
   padding: 2rem 0 0 2rem;
-  overflow-y: auto;
   z-index: 1;
   overflow-x: hidden;
   background-color: white !important;

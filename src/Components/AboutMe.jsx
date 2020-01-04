@@ -3,7 +3,7 @@ import { Container, Grid, Divider } from 'semantic-ui-react'
 import MyPicture from '../Images/me.jpg'
 
 const AboutMe = () => {
-  let myPicture = <img src={ MyPicture } alt='Image of Luca' id='about-img' width='500' height='400' object-fit='cover' />
+  let myPicture = <img src={ MyPicture } alt='Image of Luca' id='about-img' width='500' height='400' />
 
   return (
     <>
