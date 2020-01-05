@@ -91,11 +91,6 @@ body {
   width: 350px;
 }
 
-.project-card {
-  height: 390px;
-  margin: 2rem !important;
-}
-
 .ui.container.page-content {
   margin-left: 23rem !important;
   display: block;
