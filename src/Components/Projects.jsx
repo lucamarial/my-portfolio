@@ -25,7 +25,7 @@ class Projects extends Component {
   render() {
     let projects = this.state.projects
     let projectsList
-    let backgroundImg = <img src={BackgroundImg} id='about-background' />
+    let backgroundImg = <img src={BackgroundImg} id='projects-background' />
     
     if (projects.length > 0) {
       projectsList = projects.map(project => {
@@ -39,9 +39,11 @@ class Projects extends Component {
 
     return (
       <>
-        {backgroundImg}
-        <Container className='page-content'>
-          <Header as='h2' textAlign='center'>My Projects</Header>
+        <div id='wrapper'>
+          {backgroundImg}
+          <p id='image-text'>My Favorite Projects</p>
+        </div>
+        <Container className='page-content'>          
           <Grid centered container columns={3}>
             <Grid.Row>
               {projectsList}

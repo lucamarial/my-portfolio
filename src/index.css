@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script&display=swap');
 
 body {
   margin: 4rem 0;
   font-family: 'Arimo', sans-serif;
   word-wrap: break-word;
   font-size: 120%;
+  background-color: rgb(219, 224, 172);
 }
 
 /* SideBar */
@@ -43,12 +44,21 @@ body {
   display: block;
 }
 
-#about-background {
+#projects-background {
   margin: -4rem 0rem 0 0 !important;
   object-fit: cover;
   width: 100%;
   height: 450px;
   opacity: 0.7;
+}
+
+#wrapper #image-text {
+  position: relative;
+  bottom: 250px;
+  left: 900px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: white;
 }
 
 /* AboutMe */
