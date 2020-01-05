@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One&display=swap');
 
 body {
   margin: 4rem 0;
@@ -6,6 +6,32 @@ body {
   word-wrap: break-word;
   font-size: 120%;
   background-color: rgb(219, 224, 172);
+}
+
+/* HomePage */
+
+#home-wrapper #home-img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+  margin: -4rem 0;
+}
+
+#home-wrapper #home-text {
+  position: relative;
+  bottom: 350px;
+  left: 680px;
+  color: white;
+}
+
+#home-wrapper #text-one {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 29px;
+}
+
+#home-wrapper #text-two {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
 }
 
 /* SideBar */
@@ -17,6 +43,7 @@ body {
 
 .menu-item {
   font-size: 18px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .side-menu {
@@ -69,6 +96,7 @@ body {
 
 #about-header {
   font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .ui.divider {

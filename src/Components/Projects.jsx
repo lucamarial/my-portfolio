@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ProjectCard from './ProjectCard'
-import { Container, Grid, Header } from 'semantic-ui-react'
+import { Container, Grid } from 'semantic-ui-react'
 import BackgroundImg from '../Images/background2.jpg'
 
 class Projects extends Component {
@@ -43,6 +43,7 @@ class Projects extends Component {
           {backgroundImg}
           <p id='image-text'>My Favorite Projects</p>
         </div>
+        
         <Container className='page-content'>          
           <Grid centered container columns={3}>
             <Grid.Row>
