@@ -2,7 +2,7 @@ import React from 'react'
 import HomeImg from '../Images/background1.jpg'
 
 const HomePage = () => {
-  let homeImg = <img id='home-img' src={HomeImg} alt='Plant Image' />
+  let homeImg = <img id='home-img' src={HomeImg} alt='Plant' />
 
   return (
     <>
