@@ -14,7 +14,7 @@ const AboutMe = () => {
           </Grid.Column>
           <Grid.Column width={8}>
             <h2 id='about-header'>ABOUT</h2>
-            <Divider />
+            <Divider section/>
             <div id='about-text'>
               <p>Yotec nisih tinanit rucila yetih do conule tusonu redil. Mo leri afoten enieb copeg no sesakim feruru.</p>
               <p> Edietunu unefel tuyehie asinec unienu casiti. Rap vul vaca tanara folu recur keref ileso tigeg. Ho tie titi wan ronu oyifiger na pusep had! Meca tatama elet fap tienap cid ana laramec tu, biel ciemo sal ciret elowados?</p>
