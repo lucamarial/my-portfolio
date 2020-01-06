@@ -165,6 +165,12 @@ body {
 
 /* AboutMe */
 
+#about-container {
+  margin-left: 23rem !important;
+  display: block;
+  width: auto !important;
+}
+
 #about-img {
   object-fit: cover;
 }
