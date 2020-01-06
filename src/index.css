@@ -10,23 +10,27 @@ body {
 
 /* HomePage */
 
+#home-wrapper {
+  margin: -4rem 0 0 23rem;
+  text-align: center;
+}
+
 #home-wrapper #home-img {
   height: 650px;
   width: 100%;
   object-fit: cover;
-  margin: -4rem 0;
+  opacity: 0.7;
 }
 
 #home-wrapper #home-text {
   position: relative;
-  bottom: 350px;
-  left: 680px;
+  bottom: 360px;
   color: #515151;
 }
 
 #home-wrapper #text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 29px;
+  font-size: 32px;
 }
 
 #home-wrapper #text-two {
@@ -173,6 +177,8 @@ body {
 
 #about-text {
   color: #525252;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
 }
 
 .ui.divider {
