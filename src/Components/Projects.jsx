@@ -43,6 +43,11 @@ class Projects extends Component {
           {backgroundImg}
           <p id='image-text'>My Favorite Projects</p>
         </div>
+
+        <div id='description-wrapper'>
+          <p className='description' id='description-one'>I work with passion on my projects.</p>
+          <p className='description' id='description-two'>Explore the portfolio</p>
+        </div>
         
         <Container className='page-content'>          
           <Grid centered container columns={3}>
