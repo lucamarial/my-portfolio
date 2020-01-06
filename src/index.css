@@ -21,7 +21,7 @@ body {
   position: relative;
   bottom: 350px;
   left: 680px;
-  color: white;
+  color: #515151;
 }
 
 #home-wrapper #text-one {
@@ -39,6 +39,7 @@ body {
 #my-name {
   font-family: 'Baskervville', serif;
   font-size: 23px;
+  color: #525252;
 }
 
 .menu-item {
@@ -93,12 +94,13 @@ body {
 #description-one {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 23px;
+  color: #808984;
 }
 
 #description-one:after {
   content: "";
   display: block;
-  border-left: 1px solid grey;
+  border-left: 1px solid #525252;
   height: 5rem;
   position: relative;
   left: 50%;
@@ -108,6 +110,7 @@ body {
 #description-two {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
+  color: #525252;
 }
 
 #project-wrapper {
@@ -140,6 +143,16 @@ body {
   width: 350px;
 }
 
+.project-name {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+}
+
+.project-description {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
+}
+
 .ui.container.page-content {
   margin-left: 23rem !important;
   display: block;
@@ -155,6 +168,11 @@ body {
 #about-header {
   font-size: 30px;
   font-family: 'Julius Sans One', sans-serif;
+  color: #808984;
+}
+
+#about-text {
+  color: #525252;
 }
 
 .ui.divider {
