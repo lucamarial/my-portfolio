@@ -13,8 +13,8 @@ const ProjectCard = (props) => {
             src={project.image} 
           />
           <div className='project-text'>
-            <p>{project.name}</p>
-            <p>{project.description}</p>
+            <p className='project-name'>{project.name}</p>
+            <p className='project-description'>{project.description}</p>
           </div>
         </div>
       </Grid.Column>
