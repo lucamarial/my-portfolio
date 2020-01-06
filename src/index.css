@@ -104,7 +104,7 @@ body {
 #description-one:after {
   content: "";
   display: block;
-  border-left: 1px solid #525252;
+  border-left: 1px solid #808984;
   height: 5rem;
   position: relative;
   left: 50%;
@@ -124,13 +124,15 @@ body {
 
 #project-wrapper .project-text {
   position: absolute;
-  bottom: 2rem;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   max-width: 100%;
-  height: 250px;
+  max-height: 250px;
   text-align: center;
   visibility: hidden;
-  color: white;
+  color: #383838;
+  background-color: rgba(255, 255, 255, 0.609);
+  padding: 6px;
 }
 
 #project-wrapper:hover .project-text {
@@ -138,7 +140,7 @@ body {
 }
 
 #project-wrapper:hover .project-img {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .project-img {
@@ -149,7 +151,7 @@ body {
 
 .project-name {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .project-description {
