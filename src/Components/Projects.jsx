@@ -25,7 +25,7 @@ class Projects extends Component {
   render() {
     let projects = this.state.projects
     let projectsList
-    let backgroundImg = <img src={BackgroundImg} id='projects-background' />
+    let backgroundImg = <img src={BackgroundImg} alt='Plant' id='projects-background' />
     
     if (projects.length > 0) {
       projectsList = projects.map(project => {
