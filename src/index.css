@@ -41,14 +41,14 @@ body {
   font-size: 18px;
 }
 
-#draw {
+.draw {
   background-color: transparent;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-#path {
+.path {
   fill: rgb(219, 224, 172);
 }
 
@@ -95,6 +95,31 @@ body {
   font-size: 20px;
   color: #525252;
 }
+
+#arrow-wrapper {
+  margin-left: 23rem;
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+
+#flower-img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#draw-two {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#path-two {
+  fill: rgb(219, 224, 172);
+}
+
 
 /* SideBar */
 
