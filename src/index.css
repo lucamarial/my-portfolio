@@ -195,6 +195,10 @@ body {
   grid-column: 1/3;
 }
 
+#about-img-one {
+  object-position: 74% 50%;
+}
+
 #item-img-two {
   grid-row: 7/10;
   grid-column: 2/5;
@@ -208,7 +212,7 @@ body {
 }
 
 #item-text {
-  grid-row: 1/4;
+  grid-row: 1/7;
   grid-column: 3/6;
   padding: 0 0 1rem 2rem;
 }
@@ -223,6 +227,10 @@ body {
   color: #525252;
   font-family: 'Ibarra Real Nova', serif;
   font-size: 20px;
+}
+
+#about-intro {
+  font-style: italic;
 }
 
 .ui.divider {

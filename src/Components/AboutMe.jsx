@@ -4,7 +4,7 @@ import MyPicture from '../Images/me.jpg'
 import LucaPicture from '../Images/lucal.jpg'
 
 const AboutMe = () => {
-  let myPicture = <img src={ MyPicture } alt='Luca Lobacher' className='about-img' />
+  let myPicture = <img src={ MyPicture } alt='Luca Lobacher' className='about-img' id='about-img-one' />
   let lucaPicture = <img src={ LucaPicture } alt='Luca Lobacher' className='about-img' />
 
   return (
