@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One&display=swap');
 
 body {
-  margin: 4rem 0;
   font-family: 'Arimo', sans-serif;
   word-wrap: break-word;
   font-size: 120%;
@@ -11,8 +10,10 @@ body {
 /* HomePage */
 
 #home-wrapper {
-  margin: -4rem 0 0 23rem;
+  margin-left: 23rem;
   text-align: center;
+  position: relative;
+  height: 650px;
 }
 
 #home-wrapper #home-img {
@@ -23,8 +24,10 @@ body {
 }
 
 #home-wrapper #home-text {
-  position: relative;
-  bottom: 360px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   color: #515151;
 }
 
@@ -36,6 +39,17 @@ body {
 #home-wrapper #text-two {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
+}
+
+#draw {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#path {
+  fill: rgb(219, 224, 172);
 }
 
 /* SideBar */
@@ -67,7 +81,7 @@ body {
 /* Projects */
 
 #wrapper {
-  margin: -4rem 0 0 23rem;
+  margin-left: 23rem;
   text-align: center;
 }
 
@@ -169,7 +183,7 @@ body {
 
 #grid-container {
   display: block;
-  margin: 0 10% 0 30rem;
+  margin: 4rem 10% 0 30rem;
   display: grid;
   grid-template-rows: repeat(6, 75px) repeat(3, 90px);
   grid-template-columns: 25% repeat(3, 95px) 40%;
