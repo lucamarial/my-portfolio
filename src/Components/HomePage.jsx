@@ -23,7 +23,7 @@ const HomePage = () => {
 
       <div id='home-info-grid'>
         <div id='home-item-img'>{bodensee}</div>
-        <p id='home-header'>Yotec nisih tinanit</p>
+        <div id='home-header'><p>Yotec nisih tinanit</p></div>
         <div id='home-intro'>
           <p>Yotec nisih tinanit rucila yetih do conule tusonu redil. Mo leri afoten enieb copeg no sesakim feruru.</p>
           <p>Yotec nisih tinanit rucila yetih do conule tusonu redil. Mo leri afoten enieb copeg no sesakim feruru.</p>
@@ -39,6 +39,12 @@ const HomePage = () => {
           <path className='path' d='M0,0 L0,10 100,10 100,0 50,10 Z' />
         </svg>
       </div>
+
+      <footer>
+        <div id='footer-info'>
+          <p>Nowina dad xohonip lihu</p>
+        </div>
+      </footer>
     </>
   )
 }
