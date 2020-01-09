@@ -1,20 +1,26 @@
 [
   {
     "id": 1,
+    "name": "Wander Project",
+    "image": "https://images.unsplash.com/photo-1544149008-e7bc77527c66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "This is my final project as I attended the Craft Academy Bootcamp."
+  },
+  {
+    "id": 2,
     "name": "My first Website",
     "image": "https://images.unsplash.com/photo-1571657047042-9bcaf5f76a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     "description": "One of my first projects was the Rock-Paper-Scissors challenge. You can choose between Rock, Paper or Scissor and the computer will make a random choice."
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "The Newsroom App",
     "image": "https://images.unsplash.com/photo-1566378246598-5b11a0d486cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    "description": "Working in a team we created a newsroom application called 'Fake News'."
+    "description": "Working in a team, we created a newsroom application called 'Fake News'."
   },
   {
-    "id": 3,
-    "name": "Wander Project",
-    "image": "https://images.unsplash.com/photo-1544149008-e7bc77527c66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "description": "This is my final project as I attended the Craft Academy Bootcamp."
+    "id": 4,
+    "name": "ATM Challenge",
+    "image": "https://images.unsplash.com/photo-1548721876-fe60de9dd048?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "description": "While practicing Pair Programming, we worked on a ruby based project."
   }
 ]
