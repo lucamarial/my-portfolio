@@ -121,6 +121,21 @@ body {
   fill: rgb(219, 224, 172);
 }
 
+footer {
+  position: relative;
+  margin: 10rem 0 0 23rem;
+  height: 250px;
+  background: #b1887b;
+  line-height: 50px;
+}
+
+#footer-info {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+}
 
 /* SideBar */
 
