@@ -57,8 +57,8 @@ body {
   margin-left: 23rem;
   padding: 10rem 15%;
   display: grid;
-  grid-template-rows: 30px repeat(4, 75px);
-  grid-template-columns: 2fr 0.5fr 2fr 0.75fr;
+  grid-template-rows: 55px 75px repeat(3, 100px);
+  grid-template-columns: 1.75fr 0.5fr 2fr 0.75fr;
   gap: 15px;
 }
 
