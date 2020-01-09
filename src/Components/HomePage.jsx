@@ -16,7 +16,7 @@ const HomePage = () => {
           <p id='text-one'>Hey, my name is Luca Lobacher.</p>
           <p id='text-two'>I am a front-end developer and this is my portfolio.</p>
         </div>
-        <svg className='draw' width='100%' height='10%' viewBox='0 0 100 10' preserveAspectRatio='none'>
+        <svg className='draw' width='100%' height='25%' viewBox='0 0 100 10' preserveAspectRatio='none'>
           <path className='path' d='M0,0 L0,10 100,10 100,0 50,10 Z' />
         </svg>
       </div>
@@ -29,13 +29,13 @@ const HomePage = () => {
           <p>Yotec nisih tinanit rucila yetih do conule tusonu redil. Mo leri afoten enieb copeg no sesakim feruru.</p>
         </div>
       </div>
-      
+
       <div id='arrow-wrapper'>
         {flowerMeadow}
-        <svg id='draw-two' width='100%' height='10%' viewBox='0 0 100 10' preserveAspectRatio='none'>
+        <svg id='draw-two' width='100%' height='25%' viewBox='0 0 100 10' preserveAspectRatio='none'>
           <path id='path-two' d='M0,0 L50,10 100,0 Z' />
         </svg>
-        <svg className='draw' width='100%' height='10%' viewBox='0 0 100 10' preserveAspectRatio='none'>
+        <svg className='draw' width='100%' height='25%' viewBox='0 0 100 10' preserveAspectRatio='none'>
           <path className='path' d='M0,0 L0,10 100,10 100,0 50,10 Z' />
         </svg>
       </div>
