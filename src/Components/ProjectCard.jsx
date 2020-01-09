@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Grid, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 const ProjectCard = (props) => {
   let project = props.project
@@ -7,17 +7,17 @@ const ProjectCard = (props) => {
   return (
     <>
       <Grid.Column>
-        <Card className='project-card'>
-          <Image 
-            src={project.image} 
-            object-fit='cover'
-            height='200px'
+        <div id='project-wrapper'>
+          <img
+            className='project-img'
+            src={project.image}
+            alt='Project'
           />
-          <Card.Content>
-            <Card.Header>{project.name}</Card.Header>
-            <Card.Description>{project.description}</Card.Description>
-          </Card.Content>
-        </Card>
+          <div className='project-text'>
+            <p className='project-name'>{project.name}</p>
+            <p className='project-description'>{project.description}</p>
+          </div>
+        </div>
       </Grid.Column>
     </>
   )

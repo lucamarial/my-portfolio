@@ -1,10 +1,157 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One&display=swap');
 
 body {
-  margin: 4rem;
   font-family: 'Arimo', sans-serif;
   word-wrap: break-word;
   font-size: 120%;
+  background-color: rgb(219, 224, 172);
+}
+
+/* HomePage */
+
+#home-wrapper {
+  margin-left: 23rem;
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+
+#home-wrapper #home-img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+#home-wrapper #home-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #515151;
+}
+
+#home-wrapper #text-one {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 32px;
+}
+
+#home-wrapper #text-two {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+}
+
+.draw {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.path {
+  fill: rgb(219, 224, 172);
+}
+
+#home-info-grid {
+  display: block;
+  margin-left: 23rem;
+  padding: 10rem 15%;
+  display: grid;
+  grid-template-rows: 55px 75px repeat(3, 100px);
+  grid-template-columns: 1.75fr 0.5fr 2fr 0.75fr;
+  gap: 15px;
+}
+
+#home-item-img {
+  grid-row: 1/6;
+  grid-column: 1/3;
+}
+
+#bodensee-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 20px solid rgba(255, 255, 255, 0.568);
+}
+
+#home-header {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  background-color: #b1887b;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 23px;
+  color: #525252;
+  text-align: center;
+}
+
+#home-intro {
+  grid-row: 3/6;
+  grid-column: 3/5;
+  padding: 2rem 0 1.5rem 1.5rem;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
+  color: #525252;
+}
+
+#arrow-wrapper {
+  margin-left: 23rem;
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+
+#flower-img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#arrow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #515151;
+  background: rgba(255, 255, 255, 0.568);
+  padding: 20px;
+}
+
+#arrow-text-one {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 25px;
+}
+
+#draw-two {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#path-two {
+  fill: rgb(219, 224, 172);
+}
+
+footer {
+  position: relative;
+  margin: 10rem 0 0 23rem;
+  height: 250px;
+  background: #b1887b;
+  line-height: 50px;
+}
+
+#footer-info {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
 }
 
 /* SideBar */
@@ -12,10 +159,12 @@ body {
 #my-name {
   font-family: 'Baskervville', serif;
   font-size: 23px;
+  color: #525252;
 }
 
 .menu-item {
   font-size: 18px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .side-menu {
@@ -33,29 +182,160 @@ body {
 
 /* Projects */
 
-.project-card {
-  height: 390px;
-  margin: 2rem !important;
+#wrapper {
+  margin-left: 23rem;
+  text-align: center;
+}
+
+#projects-background {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  opacity: 0.7;
+}
+
+#wrapper #image-text {
+  position: relative;
+  bottom: 250px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+#description-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin-left: 23rem;
+}
+
+#description-one {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 23px;
+  color: #808984;
+}
+
+#description-one:after {
+  content: "";
+  display: block;
+  border-left: 1px solid #808984;
+  height: 5rem;
+  position: relative;
+  left: 50%;
+  margin: 1rem 0 1rem 0
+}
+
+#description-two {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+  color: #525252;
+}
+
+#project-wrapper {
+  margin: 15px;
+  position: relative;
+}
+
+#project-wrapper .project-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 250px;
+  text-align: center;
+  visibility: hidden;
+  color: #383838;
+  background-color: rgba(255, 255, 255, 0.609);
+  padding: 6px;
+}
+
+#project-wrapper:hover .project-text {
+  visibility: visible;
+}
+
+#project-wrapper:hover .project-img {
+  opacity: 0.4;
+}
+
+.project-img {
+  object-fit: cover;
+  height: 350px;
+  width: 350px;
+}
+
+.project-name {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 23px;
+}
+
+.project-description {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
 }
 
 .ui.container.page-content {
   margin-left: 23rem !important;
   display: block;
+  width: auto !important;
 }
 
 /* AboutMe */
 
-#about-img {
+#grid-container {
+  display: block;
+  margin-left: 23rem;
+  padding: 4rem 10%;
+  display: grid;
+  grid-template-rows: repeat(6, 75px) repeat(3, 90px);
+  grid-template-columns: 25% repeat(3, 95px) 40%;
+  gap: 15px;
+}
+
+#item-img-one {
+  grid-row: 3/9;
+  grid-column: 1/3;
+}
+
+#about-img-one {
+  object-position: 74% 50%;
+}
+
+#item-img-two {
+  grid-row: 7/10;
+  grid-column: 2/5;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border: 20px solid rgba(255, 255, 255, 0.568);
+}
+
+#item-text {
+  grid-row: 1/7;
+  grid-column: 3/6;
+  padding: 0 0 1rem 2rem;
 }
 
 #about-header {
   font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #a77b6c;
+}
+
+#about-text {
+  color: #525252;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
+}
+
+#about-intro {
+  font-style: italic;
 }
 
 .ui.divider {
   width: 4rem;
-  height: 2px;
-  background-color: black;
-  margin: 2rem 0 3rem
 }
