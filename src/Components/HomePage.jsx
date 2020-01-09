@@ -32,6 +32,9 @@ const HomePage = () => {
 
       <div id='arrow-wrapper'>
         {flowerMeadow}
+        <div id='arrow-text'>
+          <p id='arrow-text-one'>Yotec nisih tinanit rucila yetih do conule</p>
+        </div>
         <svg id='draw-two' width='100%' height='25%' viewBox='0 0 100 10' preserveAspectRatio='none'>
           <path id='path-two' d='M0,0 L50,10 100,0 Z' />
         </svg>

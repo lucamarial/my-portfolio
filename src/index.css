@@ -110,6 +110,21 @@ body {
   opacity: 0.8;
 }
 
+#arrow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #515151;
+  background: rgba(255, 255, 255, 0.568);
+  padding: 20px;
+}
+
+#arrow-text-one {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 25px;
+}
+
 #draw-two {
   background-color: transparent;
   position: absolute;
