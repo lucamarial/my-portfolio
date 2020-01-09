@@ -285,7 +285,8 @@ footer {
 
 #grid-container {
   display: block;
-  margin: 4rem 10% 0 30rem;
+  margin-left: 23rem;
+  padding: 4rem 10%;
   display: grid;
   grid-template-rows: repeat(6, 75px) repeat(3, 90px);
   grid-template-columns: 25% repeat(3, 95px) 40%;
