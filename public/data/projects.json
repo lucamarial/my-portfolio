@@ -31,14 +31,14 @@
     "id": 5,
     "name": "Library Challenge",
     "image": "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    "description": "To work in a Test-Driven Development, I used Rspec a testing framework.",
+    "description": "When working with Test-Driven Development, I used RSpec.",
     "link": "https://github.com/lucamarial/library-challenge"
   },
   {
     "id": 6,
     "name": "Address Book",
     "image": "https://images.unsplash.com/photo-1529590003495-b2646e2718bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=710&q=80",
-    "description": "To be able to save the contacts, I made use of a local storage.",
+    "description": "To be able to save contacts, I used local storage.",
     "link": "https://myaddressbook-ly.netlify.com"
   },
   {
