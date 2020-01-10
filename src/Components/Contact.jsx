@@ -8,14 +8,24 @@ class Contact extends Component {
     subject: null,
     message: null,
     errors: {
-      name: null,
-      email: null,
-      subject: null,
-      message: null
-    }
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    },
+    form: null,
+    errorMessage: null
   }
 
   validEmail = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i)
+
+  validateForm = (errors) => {
+    let valid = true
+    Object.values(errors).forEach(
+      val => val.length > 0 && (valid = false)
+    )
+    return valid
+  }
 
   inputHandler = (e) => {
     e.preventDefault()
@@ -27,25 +37,25 @@ class Contact extends Component {
         errors.name = 
           value.length < 5
             ? 'Full Name must be 5 characters long!'
-            : null
+            : ''
         break
       case 'email':
         errors.email =
-          validEmail.test(value)
-            ? null
+          this.validEmail.test(value)
+            ? ''
             : 'Email is not valid!'
         break
       case 'subject':
         errors.subject = 
           value.length < 1
             ? "Subject can't be empty!"
-            : null
+            : ''
         break
       case 'message':
         errors.message =
           value.length < 5
             ? 'Message must be 5 characters long!'
-            : null
+            : ''
         break
       default:
         break
@@ -54,18 +64,33 @@ class Contact extends Component {
     this.setState({errors, [name]: value})
   }
 
-	sendEmail = e => {
-		e.preventDefault()
+  submitHandler = async (e) => {
+    e.preventDefault()
 
+    await this.setState({
+      form: e.target
+    })
+
+    if(this.validateForm(this.state.errors)) {
+      this.sendEmail(this.state.form)
+    } else {
+      this.setState({
+        errorMessage: 'Please make sure that all fields contain valid information.'
+      })
+    }
+  }
+
+	sendEmail = form => {
 		emailjs
 			.sendForm(
 				'portfolio',
 				'template_2rkVUPhJ',
-				e.target,
+				form,
 				'user_Fbg0gkdOYX4sEe4gibPK3'
 			)
 			.then(
 				response => {
+          debugger
 					console.log(response.text)
 				},
 				error => {
@@ -77,7 +102,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<form className='contact-form' onSubmit={this.sendEmail} noValidate>
+				<form className='contact-form' onSubmit={this.submitHandler} noValidate>
 					<input type='text' name='name' placeholder='Name' noValidate onChange={this.inputHandler} />
 					<input type='email' name='email' placeholder='E-Mail' noValidate onChange={this.inputHandler} />
 					<input type='text' name='subject' placeholder='Subject' noValidate onChange={this.inputHandler} />
