@@ -90,7 +90,6 @@ class Contact extends Component {
 			)
 			.then(
 				response => {
-          debugger
 					console.log(response.text)
 				},
 				error => {
@@ -100,13 +99,27 @@ class Contact extends Component {
 	}
 
 	render() {
+    const { errors } = this.state
+
 		return (
 			<div>
 				<form className='contact-form' onSubmit={this.submitHandler} noValidate>
-					<input type='text' name='name' placeholder='Name' noValidate onChange={this.inputHandler} />
-					<input type='email' name='email' placeholder='E-Mail' noValidate onChange={this.inputHandler} />
-					<input type='text' name='subject' placeholder='Subject' noValidate onChange={this.inputHandler} />
-					<textarea name='message' placeholder='Message' noValidate onChange={this.inputHandler} />
+          <div>
+            <input type='text' name='name' placeholder='Name' noValidate onChange={this.inputHandler} />
+              {errors.name ? <span>{errors.name}</span> : null}
+          </div>
+          <div>
+            <input type='email' name='email' placeholder='E-Mail' noValidate onChange={this.inputHandler} />
+            {errors.email ? <span>{errors.email}</span> : null}
+          </div>
+          <div>
+            <input type='text' name='subject' placeholder='Subject' noValidate onChange={this.inputHandler} />
+            {errors.subject ? <span>{errors.subject}</span> : null}
+          </div>
+          <div>
+            <textarea name='message' placeholder='Message' noValidate onChange={this.inputHandler} />
+            {errors.message ? <span>{errors.message}</span> : null}
+          </div>
 					<input type='submit' value='Send' />
 				</form>
 			</div>
