@@ -15,6 +15,45 @@ class Contact extends Component {
     }
   }
 
+  validEmail = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i)
+
+  inputHandler = (e) => {
+    e.preventDefault()
+    const { name, value } = e.target
+    let errors = this.state.errors
+
+    switch (name) {
+      case 'name':
+        errors.name = 
+          value.length < 5
+            ? 'Full Name must be 5 characters long!'
+            : null
+        break
+      case 'email':
+        errors.email =
+          validEmail.test(value)
+            ? null
+            : 'Email is not valid!'
+        break
+      case 'subject':
+        errors.subject = 
+          value.length < 1
+            ? "Subject can't be empty!"
+            : null
+        break
+      case 'message':
+        errors.message =
+          value.length < 5
+            ? 'Message must be 5 characters long!'
+            : null
+        break
+      default:
+        break
+    }
+
+    this.setState({errors, [name]: value})
+  }
+
 	sendEmail = e => {
 		e.preventDefault()
 
@@ -39,10 +78,10 @@ class Contact extends Component {
 		return (
 			<div>
 				<form className='contact-form' onSubmit={this.sendEmail} noValidate>
-					<input type='text' name='name' placeholder='Name' noValidate />
-					<input type='email' name='email' placeholder='E-Mail' noValidate />
-					<input type='text' name='subject' placeholder='Subject' noValidate />
-					<textarea name='message' placeholder='Message' noValidate />
+					<input type='text' name='name' placeholder='Name' noValidate onChange={this.inputHandler} />
+					<input type='email' name='email' placeholder='E-Mail' noValidate onChange={this.inputHandler} />
+					<input type='text' name='subject' placeholder='Subject' noValidate onChange={this.inputHandler} />
+					<textarea name='message' placeholder='Message' noValidate onChange={this.inputHandler} />
 					<input type='submit' value='Send' />
 				</form>
 			</div>
