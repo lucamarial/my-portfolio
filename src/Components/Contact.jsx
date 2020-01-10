@@ -2,6 +2,19 @@ import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 
 class Contact extends Component {
+  state = {
+    name: null,
+    email: null,
+    subject: null,
+    message: null,
+    errors: {
+      name: null,
+      email: null,
+      subject: null,
+      message: null
+    }
+  }
+
 	sendEmail = e => {
 		e.preventDefault()
 
@@ -25,11 +38,11 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<form className='contact-form' onSubmit={this.sendEmail}>
-					<input type='text' name='name' placeholder='Name' />
-					<input type='email' name='email' placeholder='E-Mail' />
-					<input type='text' name='subject' placeholder='Subject' />
-					<textarea name='message' placeholder='Message' />
+				<form className='contact-form' onSubmit={this.sendEmail} noValidate>
+					<input type='text' name='name' placeholder='Name' noValidate />
+					<input type='email' name='email' placeholder='E-Mail' noValidate />
+					<input type='text' name='subject' placeholder='Subject' noValidate />
+					<textarea name='message' placeholder='Message' noValidate />
 					<input type='submit' value='Send' />
 				</form>
 			</div>
