@@ -14,6 +14,7 @@ class Contact extends Component {
       message: ''
     },
     form: null,
+    responseMessage: null,
     errorMessage: null
   }
 
@@ -90,9 +91,15 @@ class Contact extends Component {
 			)
 			.then(
 				response => {
+          this.setState({
+            responseMessage: 'Email was successfully sent!'
+          })
 					console.log(response.text)
 				},
 				error => {
+          this.setState({
+            errorMessage: 'The email could not be sent.'
+          })
 					console.log(error.text)
 				}
 			)
@@ -100,6 +107,15 @@ class Contact extends Component {
 
 	render() {
     const { errors } = this.state
+    let responseMessage, errorMessage
+
+    if(this.state.responseMessage) {
+      responseMessage = <p>{this.state.responseMessage}</p>
+    }
+
+    if(this.state.errorMessage) {
+      errorMessage = <p>{this.state.errorMessage}</p>
+    }
 
 		return (
 			<div>
@@ -122,6 +138,10 @@ class Contact extends Component {
           </div>
 					<input type='submit' value='Send' />
 				</form>
+        <div>
+          {responseMessage}
+          {errorMessage}
+        </div>
 			</div>
 		)
 	}
