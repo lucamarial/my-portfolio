@@ -172,7 +172,7 @@ class Contact extends Component {
             {errorMessage}
             <Button type='submit' content='Send' />
           </Form>
-          <div>
+          <div className='contact-info'>
             <List>
               <List.Item>
                 <List.Icon name='marker' />
@@ -183,6 +183,16 @@ class Contact extends Component {
                 <List.Content>luca.lobacher@gmail.com</List.Content>
               </List.Item>
             </List>
+            <hr />
+            <List horizontal>
+              <List.Item>
+                <List.Icon name='github' size='huge' />
+              </List.Item>
+              <List.Item>
+                <List.Icon name='linkedin' size='huge' />
+              </List.Item>
+            </List>
+            <hr />
           </div>
         </div>
       </>
