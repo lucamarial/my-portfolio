@@ -6,7 +6,7 @@ import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import { Switch, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
 	return (
     <>
       <SideBar />
