@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
-import { Form, Message } from 'semantic-ui-react'
+import { Form, Message, Button } from 'semantic-ui-react'
 
 class Contact extends Component {
   state = {
@@ -170,7 +170,7 @@ class Contact extends Component {
             />
             {responseMessage}
             {errorMessage}
-            <input type='submit' value='Send' />
+            <Button type='submit' content='Send' />
           </Form>
         </div>
       </>
