@@ -339,3 +339,9 @@ footer {
 .ui.divider {
   width: 4rem;
 }
+
+/* Contact */
+
+#contact-container {
+  margin-left: 23rem;
+}

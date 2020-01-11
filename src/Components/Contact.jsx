@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
+import { Form, Message } from 'semantic-ui-react'
 
 class Contact extends Component {
   state = {
@@ -44,7 +45,7 @@ class Contact extends Component {
         errors.email =
           this.validEmail.test(value)
             ? ''
-            : 'Email is not valid!'
+            : 'Please enter a valid email address!'
         break
       case 'subject':
         errors.subject = 
@@ -62,22 +63,28 @@ class Contact extends Component {
         break
     }
 
-    this.setState({errors, [name]: value})
+    this.setState({
+      errors, [name]: value
+    })
   }
 
-  submitHandler = async (e) => {
+  submitHandler = async e => {
     e.preventDefault()
-
     await this.setState({
-      form: e.target
+      form: e.target,
+      [e.target.name.name]: e.target.name.value,
+      [e.target.email.name]: e.target.subject.value,
+      [e.target.subject.name]: e.target.subject.value,
+      [e.target.message.name]: e.target.message.value,
     })
 
-    if(this.validateForm(this.state.errors)) {
+    if(this.validateForm(this.state.errors) && this.state.name !== null && this.state.email !== null && this.state.subject !== null && this.state.message !== null) {
       this.sendEmail(this.state.form)
     } else {
       this.setState({
         errorMessage: 'Please make sure that all fields contain valid information.'
       })
+      console.log(this.state.errorMessage)
     }
   }
 
@@ -110,39 +117,63 @@ class Contact extends Component {
     let responseMessage, errorMessage
 
     if(this.state.responseMessage) {
-      responseMessage = <p>{this.state.responseMessage}</p>
+      responseMessage = 
+        <Message 
+          color='green' 
+          content={this.state.responseMessage}
+        />
     }
 
     if(this.state.errorMessage) {
-      errorMessage = <p>{this.state.errorMessage}</p>
+      errorMessage = 
+        <Message 
+          color='red'
+          content={this.state.errorMessage}
+          type='promt'
+        />
     }
 
 		return (
-			<div>
-				<form className='contact-form' onSubmit={this.submitHandler} noValidate>
-          <div>
-            <input type='text' name='name' placeholder='Name' noValidate onChange={this.inputHandler} />
-              {errors.name ? <span>{errors.name}</span> : null}
-          </div>
-          <div>
-            <input type='email' name='email' placeholder='E-Mail' noValidate onChange={this.inputHandler} />
-            {errors.email ? <span>{errors.email}</span> : null}
-          </div>
-          <div>
-            <input type='text' name='subject' placeholder='Subject' noValidate onChange={this.inputHandler} />
-            {errors.subject ? <span>{errors.subject}</span> : null}
-          </div>
-          <div>
-            <textarea name='message' placeholder='Message' noValidate onChange={this.inputHandler} />
-            {errors.message ? <span>{errors.message}</span> : null}
-          </div>
-					<input type='submit' value='Send' />
-				</form>
-        <div>
-          {responseMessage}
-          {errorMessage}
+      <>
+        <div id='contact-container'>
+          <Form className='contact-form' onSubmit={this.submitHandler} noValidate>
+            <Form.Input
+              placeholder='Name'
+              name='name'
+              type='text'
+              error={errors.name ? {content: `${errors.name}`, pointing: 'below'} : null}
+              noValidate
+              onChange={this.inputHandler}
+            />
+            <Form.Input
+              placeholder='Email'
+              name='email'
+              type='email'
+              error={errors.email ? {content: `${errors.email}`, pointing: 'below'} : null}
+              noValidate
+              onChange={this.inputHandler}
+            />  
+            <Form.Input
+              placeholder='Subject'
+              name='subject'
+              type='text'
+              error={errors.subject ? {content: `${errors.subject}`, pointing: 'below'} : null}
+              noValidate
+              onChange={this.inputHandler}
+            />
+            <Form.TextArea
+              placeholder='Message'
+              name='message'
+              error={errors.message ? {content: `${errors.message}`, pointing: 'below'} : null}
+              noValidate
+              onChange={this.inputHandler}
+            />
+            {responseMessage}
+            {errorMessage}
+            <input type='submit' value='Send' />
+          </Form>
         </div>
-			</div>
+      </>
 		)
 	}
 }
