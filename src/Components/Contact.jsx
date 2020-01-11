@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
-import { Form, Message, Button } from 'semantic-ui-react'
+import { Form, Message, Button, List } from 'semantic-ui-react'
 
 class Contact extends Component {
   state = {
@@ -172,6 +172,18 @@ class Contact extends Component {
             {errorMessage}
             <Button type='submit' content='Send' />
           </Form>
+          <div>
+            <List>
+              <List.Item>
+                <List.Icon name='marker' />
+                <List.Content>Stockholm | SWE</List.Content>
+              </List.Item>
+              <List.Item>
+                <List.Icon name='mail' />
+                <List.Content>luca.lobacher@gmail.com</List.Content>
+              </List.Item>
+            </List>
+          </div>
         </div>
       </>
 		)
