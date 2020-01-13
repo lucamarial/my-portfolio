@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
-import { Form, Message, Button, List } from 'semantic-ui-react'
+import { Form, Message, Button, List, Grid, Container } from 'semantic-ui-react'
 
 class Contact extends Component {
   state = {
@@ -135,66 +135,75 @@ class Contact extends Component {
 
 		return (
       <>
-        <div id='contact-container'>
-          <Form className='contact-form' onSubmit={this.submitHandler} noValidate>
-            <Form.Input
-              placeholder='Name'
-              name='name'
-              type='text'
-              error={errors.name ? {content: `${errors.name}`, pointing: 'below'} : null}
-              noValidate
-              onChange={this.inputHandler}
-            />
-            <Form.Input
-              placeholder='Email'
-              name='email'
-              type='email'
-              error={errors.email ? {content: `${errors.email}`, pointing: 'below'} : null}
-              noValidate
-              onChange={this.inputHandler}
-            />  
-            <Form.Input
-              placeholder='Subject'
-              name='subject'
-              type='text'
-              error={errors.subject ? {content: `${errors.subject}`, pointing: 'below'} : null}
-              noValidate
-              onChange={this.inputHandler}
-            />
-            <Form.TextArea
-              placeholder='Message'
-              name='message'
-              error={errors.message ? {content: `${errors.message}`, pointing: 'below'} : null}
-              noValidate
-              onChange={this.inputHandler}
-            />
-            {responseMessage}
-            {errorMessage}
-            <Button type='submit' content='Send' />
-          </Form>
-          <div className='contact-info'>
-            <List>
-              <List.Item>
-                <List.Icon name='marker' />
-                <List.Content>Stockholm | SWE</List.Content>
-              </List.Item>
-              <List.Item>
-                <List.Icon name='mail' />
-                <List.Content>luca.lobacher@gmail.com</List.Content>
-              </List.Item>
-            </List>
-            <hr />
-            <List horizontal>
-              <List.Item>
-                <List.Icon name='github' size='huge' />
-              </List.Item>
-              <List.Item>
-                <List.Icon name='linkedin' size='huge' />
-              </List.Item>
-            </List>
-            <hr />
-          </div>
-        </div>
+        <Container id='contact-container'>
+          <Grid centered container columns={2}>
+            <h1>Contact Me</h1>
+            <Grid.Row>
+              <Grid.Column>
+                <Form className='contact-form' onSubmit={this.submitHandler} noValidate>
+                  <Form.Input
+                    placeholder='Name'
+                    name='name'
+                    type='text'
+                    error={errors.name ? {content: `${errors.name}`, pointing: 'below'} : null}
+                    noValidate
+                    onChange={this.inputHandler}
+                  />
+                  <Form.Input
+                    placeholder='Email'
+                    name='email'
+                    type='email'
+                    error={errors.email ? {content: `${errors.email}`, pointing: 'below'} : null}
+                    noValidate
+                    onChange={this.inputHandler}
+                  />  
+                  <Form.Input
+                    placeholder='Subject'
+                    name='subject'
+                    type='text'
+                    error={errors.subject ? {content: `${errors.subject}`, pointing: 'below'} : null}
+                    noValidate
+                    onChange={this.inputHandler}
+                  />
+                  <Form.TextArea
+                    placeholder='Message'
+                    name='message'
+                    error={errors.message ? {content: `${errors.message}`, pointing: 'below'} : null}
+                    noValidate
+                    onChange={this.inputHandler}
+                  />
+                  {responseMessage}
+                  {errorMessage}
+                  <Button type='submit' content='Send' />
+                </Form>
+              </Grid.Column>
+              <Grid.Column>
+                <div className='contact-info'>
+                  <List>
+                    <List.Item>
+                      <List.Icon name='map marker alternate' size='large' />
+                      <List.Content>Stockholm | SWE</List.Content>
+                    </List.Item>
+                    <List.Item>
+                      <List.Icon name='mail' size='large' />
+                      <List.Content>luca.lobacher@gmail.com</List.Content>
+                    </List.Item>
+                  </List>
+                  <hr />
+                  <List horizontal>
+                    <List.Item>
+                      <List.Icon name='github' size='huge' />
+                    </List.Item>
+                    <List.Item>
+                      <List.Icon name='linkedin' size='huge' />
+                    </List.Item>
+                  </List>
+                  <hr />
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
       </>
 		)
 	}
