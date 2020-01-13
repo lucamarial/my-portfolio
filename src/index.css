@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One|Montserrat:100&display=swap');
 
 body {
   font-family: 'Arimo', sans-serif;
@@ -343,5 +343,35 @@ footer {
 /* Contact */
 
 #contact-container {
-  margin-left: 23rem;
+  margin:4rem 0 4rem 23rem !important;
+  display: block;
+  width: auto !important;
+}
+
+#contact-container .grid {
+  width: 40vw !important;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.contact-form input {
+  font-family: 'Julius Sans One', sans-serif !important;
+  font-size: 16px !important;
+}
+
+.contact-form textarea {
+  font-family: 'Julius Sans One', sans-serif !important;
+  font-size: 16px !important;
+}
+
+#contact-container h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 32px;
+}
+
+.contact-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
