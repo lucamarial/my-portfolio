@@ -139,8 +139,9 @@ class Contact extends Component {
       <>
         <div id='contact-wrapper'>
           {steps}
-          <p id='contact-image-text'>Contact Me</p>
+          <p id='contact-image-text'>Contact</p>
         </div>
+
         <Container id='contact-container'>
           <Grid centered container columns={2}>
             <h1>Reach me here</h1>
