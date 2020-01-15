@@ -116,7 +116,7 @@ class Contact extends Component {
 	render() {
     const { errors } = this.state
     let responseMessage, errorMessage
-    let steps = <img src={Steps} alt='Lamps' id='contact-img' />
+    let steps = <img src={Steps} alt='Steps' id='contact-img' />
 
     if(this.state.responseMessage) {
       responseMessage = 
