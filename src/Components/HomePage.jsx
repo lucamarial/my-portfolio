@@ -1,12 +1,12 @@
 import React from 'react'
-import HomeImg from '../Images/background1.jpg'
+import HomeImg from '../Images/marocco-wall.jpg'
 import Bodensee from '../Images/bodensee.jpg'
-import FlowerMeadow from '../Images/flowermeadow.jpg'
+import Mosaic from '../Images/mosaic.jpg'
 
 const HomePage = () => {
-  let homeImg = <img id='home-img' src={HomeImg} alt='Plant' />
+  let homeImg = <img id='home-img' src={HomeImg} alt='Marocco' />
   let bodensee = <img id='bodensee-img' src={Bodensee} alt='Luca Lobacher' />
-  let flowerMeadow = <img id='flower-img' src={FlowerMeadow} alt='Flower Meadow' />
+  let mosaic = <img id='mosaic-img' src={Mosaic} alt='Mosaic' />
 
   return (
     <>
@@ -31,7 +31,7 @@ const HomePage = () => {
       </div>
 
       <div id='arrow-wrapper'>
-        {flowerMeadow}
+        {mosaic}
         <div id='arrow-text'>
           <p id='arrow-text-one'>Yotec nisih tinanit rucila yetih do conule</p>
         </div>
