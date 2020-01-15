@@ -137,9 +137,13 @@ class Contact extends Component {
 
 		return (
       <>
+        <div id='contact-wrapper'>
+          {steps}
+          <p id='contact-image-text'>Contact Me</p>
+        </div>
         <Container id='contact-container'>
           <Grid centered container columns={2}>
-            <h1>Contact Me</h1>
+            <h1>Reach me here</h1>
             <Grid.Row>
               <Grid.Column>
                 <Form className='contact-form' onSubmit={this.submitHandler} noValidate>
