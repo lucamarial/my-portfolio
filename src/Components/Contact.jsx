@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import { Form, Message, Button, List, Grid, Container } from 'semantic-ui-react'
+import Steps from '../Images/steps.jpg'
 
 class Contact extends Component {
   state = {
@@ -115,6 +116,7 @@ class Contact extends Component {
 	render() {
     const { errors } = this.state
     let responseMessage, errorMessage
+    let steps = <img src={Steps} alt='Steps' id='contact-img' />
 
     if(this.state.responseMessage) {
       responseMessage = 
@@ -135,9 +137,14 @@ class Contact extends Component {
 
 		return (
       <>
+        <div id='contact-wrapper'>
+          {steps}
+          <p id='contact-image-text'>Contact</p>
+        </div>
+
         <Container id='contact-container'>
           <Grid centered container columns={2}>
-            <h1>Contact Me</h1>
+            <h1>Reach me here</h1>
             <Grid.Row>
               <Grid.Column>
                 <Form className='contact-form' onSubmit={this.submitHandler} noValidate>
