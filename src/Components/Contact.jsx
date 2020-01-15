@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import { Form, Message, Button, List, Grid, Container } from 'semantic-ui-react'
+import Steps from '../Images/steps.jpg'
 
 class Contact extends Component {
   state = {
@@ -115,6 +116,7 @@ class Contact extends Component {
 	render() {
     const { errors } = this.state
     let responseMessage, errorMessage
+    let steps = <img src={Steps} alt='Lamps' id='contact-img' />
 
     if(this.state.responseMessage) {
       responseMessage = 
