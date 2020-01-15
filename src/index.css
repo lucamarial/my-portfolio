@@ -399,9 +399,11 @@ footer {
 #contact-container h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 32px;
+  color: #ca8d22;
 }
 
 .contact-info {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+  color: #515151;
 }
