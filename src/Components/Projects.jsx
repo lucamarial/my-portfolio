@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ProjectCard from './ProjectCard'
 import { Container, Grid } from 'semantic-ui-react'
-import BackgroundImg from '../Images/background2.jpg'
+import BackgroundImg from '../Images/lamps.jpg'
 
 class Projects extends Component {
   state = {
@@ -25,7 +25,7 @@ class Projects extends Component {
   render() {
     let projects = this.state.projects
     let projectsList
-    let backgroundImg = <img src={BackgroundImg} alt='Plant' id='projects-background' />
+    let backgroundImg = <img src={BackgroundImg} alt='Lamps' id='projects-background' />
     
     if (projects.length > 0) {
       projectsList = projects.map(project => {
