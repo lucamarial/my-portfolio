@@ -347,8 +347,32 @@ footer {
 
 /* Contact */
 
+#contact-wrapper {
+  margin-left: 23rem;
+  text-align: center;
+  position: relative;
+}
+
+#contact-img {
+  object-fit: cover;
+  object-position: 50% 85%;
+  width: 100%;
+  height: 350px;
+  opacity: 0.8;
+}
+
+#contact-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  color: white;
+}
+
 #contact-container {
-  margin:4rem 0 4rem 23rem !important;
+  margin: 6rem 0 4rem 23rem !important;
   display: block;
   width: auto !important;
 }
@@ -359,6 +383,7 @@ footer {
   position: relative;
   border-radius: 10px;
   padding: 1rem;
+  border: 1px solid #dddedf;
 }
 
 .contact-form input {
