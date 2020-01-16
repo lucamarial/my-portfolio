@@ -16,7 +16,7 @@ class Technologies extends Component {
   
   render() {
     const data = this.state.data
-    let frameworkList, skillList
+    let frameworkList, skillList, dependencyList
 
     if (data) {
       frameworkList = data.frameworks.map(framework => {
@@ -29,11 +29,18 @@ class Technologies extends Component {
         return <li>{skill}</li>
       })
     }
-    
+
+    if (data) {
+      dependencyList = data.dependencies.map(dependency => {
+        return <li>{dependency}</li>
+      })
+    }
+
     return (
       <>
         <ul>{frameworkList}</ul>
         <ul>{skillList}</ul>
+        <ul>{dependencyList}</ul>
       </>
     )
   }
