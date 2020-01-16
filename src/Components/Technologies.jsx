@@ -15,9 +15,18 @@ class Technologies extends Component {
   }  
   
   render() {
+    const data = this.state.data
+    let frameworkList
+
+    if (data) {
+      frameworkList = data.frameworks.map(framework => {
+        return <li>{framework}</li>
+      })
+    }
+
     return (
       <>
-        
+        <ul>{frameworkList}</ul>
       </>
     )
   }
