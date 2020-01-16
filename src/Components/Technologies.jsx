@@ -38,9 +38,20 @@ class Technologies extends Component {
 
     return (
       <>
-        <ul>{frameworkList}</ul>
-        <ul>{skillList}</ul>
-        <ul>{dependencyList}</ul>
+        <div id="tech-container">
+          <div id="framework-list">
+            <h1 className="list-header">Frameworks / Libraries</h1>
+            <ul className="comma-list">{frameworkList}</ul>
+          </div>
+          <div id="skill-list">
+            <h1 className="list-header">Soft Skills / Misc</h1>
+            <ul className="comma-list">{skillList}</ul>
+          </div>
+          <div id="dependency-list">
+            <h1 className="list-header">Dependencies etc</h1>
+            <ul className="comma-list">{dependencyList}</ul>
+          </div>
+        </div>      
       </>
     )
   }
