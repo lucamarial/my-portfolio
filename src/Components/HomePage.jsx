@@ -2,6 +2,7 @@ import React from 'react'
 import HomeImg from '../Images/marocco-wall.jpg'
 import Bodensee from '../Images/bodensee.jpg'
 import Mosaic from '../Images/mosaic.jpg'
+import Technologies from './Technologies'
 
 const HomePage = () => {
   let homeImg = <img id='home-img' src={HomeImg} alt='Marocco' />
@@ -42,6 +43,8 @@ const HomePage = () => {
           <path className='path' d='M0,0 L0,10 100,10 100,0 50,10 Z' />
         </svg>
       </div>
+
+      <Technologies />
 
       <footer>
         <div id='footer-info'>
