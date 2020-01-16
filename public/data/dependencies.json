@@ -1,0 +1,39 @@
+{
+  "frameworks": [
+    "ReactJS",
+    "React Native",
+    "React Redux",
+    "Ruby on Rails",
+    "Cypress",
+    "Cucumber",
+    "RSpec"
+  ],
+  "dependencies": [
+    "Git/Github",
+    "NPM",
+    "NodeJS",
+    "Webpack",
+    "Babel",
+    "SemaphoreCI",
+    "Coveralls",
+    "Capybara",
+    "Shoulda Matchers",
+    "PostgreSQL",
+    "React Router DOM",
+    "Heroku",
+    "Semantic UI",
+    "Axios",
+    "EmailJS",
+    "Enzyme",
+    "Puma",
+    "Third Party API's",
+    "Devise + Token Auth",
+    "FactoryBot",
+    "i18next"
+  ],
+  "softSkills": [
+    "Pair Programming",
+    "Agile Methodologies",
+    "Scrum"
+  ]
+}
