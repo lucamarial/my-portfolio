@@ -46,7 +46,11 @@ class Resume extends Component {
               <Grid.Column>
                 <Segment>
                   <h2>CAREER OBJECTIVE</h2>
-                  Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
+                  <p>
+                    Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
+                    <br /> 
+                    I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
+                  </p>
                 </Segment>
                 <Segment>
                   <h2>WORK EXPERIENCE</h2>
@@ -58,9 +62,20 @@ class Resume extends Component {
               <Grid.Column width={6}>
                 <Segment>
                   <h2>EDUCATION</h2>
-                  <List>
+                  <List divided relaxed>
                     {educationList}
                   </List>
+                </Segment>
+                <Segment>
+                  <h2>HOBBIES</h2>
+                  <List
+                    items={[
+                      'Traveling',
+                      'Skiing',
+                      'Hiking',
+                      'Climbing'
+                    ]}
+                  />
                 </Segment>
               </Grid.Column>
               <Grid.Column>
