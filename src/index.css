@@ -396,6 +396,13 @@ footer {
   width: 4rem;
 }
 
+/* Resume */
+
+#resume-wrapper {
+  margin: 4rem 0 4rem 23rem;
+  padding: 0 10%;
+}
+
 /* Contact */
 
 #contact-wrapper {
