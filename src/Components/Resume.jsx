@@ -44,30 +44,30 @@ class Resume extends Component {
           <Grid columns='equal'>
             <Grid.Row>
               <Grid.Column>
-                <Segment>
-                  <h2 className='resume-header'>CAREER OBJECTIVE</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Career Objective</h2>
                   <p className='resume-info'>
                     Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
                     <br /> 
                     I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
                   </p>
                 </Segment>
-                <Segment>
-                  <h2 className='resume-header'>WORK EXPERIENCE</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Work Experience</h2>
                   <List>
                     {workExperience}
                   </List>
                 </Segment>
               </Grid.Column>
               <Grid.Column width={6}>
-                <Segment>
-                  <h2 className='resume-header'>EDUCATION</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Education</h2>
                   <List divided relaxed>
                     {educationList}
                   </List>
                 </Segment>
-                <Segment>
-                  <h2 className='resume-header'>HOBBIES</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Interests</h2>
                   <List
                     className='resume-info'
                     items={[
@@ -80,8 +80,8 @@ class Resume extends Component {
                 </Segment>
               </Grid.Column>
               <Grid.Column>
-                <Segment>
-                  <h2 className='resume-header'>TECHNICAL SKILLS</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Technical Skills</h2>
                   <List
                     className='resume-info'
                     items={[
@@ -93,8 +93,8 @@ class Resume extends Component {
                     ]}
                   />
                 </Segment>
-                <Segment>
-                  <h2 className='resume-header'>SOFT SKILLS</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Soft Skills</h2>
                   <List
                     className='resume-info'
                     items={[
@@ -105,8 +105,8 @@ class Resume extends Component {
                     ]}
                   />
                 </Segment>
-                <Segment>
-                  <h2 className='resume-header'>LANGUAGES</h2>
+                <Segment color='teal'>
+                  <h2 className='resume-header'>Languages</h2>
                   <List
                     className='resume-info'
                     items={[
