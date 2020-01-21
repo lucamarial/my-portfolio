@@ -64,6 +64,17 @@ class Resume extends Component {
                   />
                 </Segment>
                 <Segment>
+                  <h2>SOFT SKILLS</h2>
+                  <List
+                    items={[
+                      'Teamwork',
+                      'Logical/critical thinking',
+                      'Flexibility',
+                      'Working with an agile approach'
+                    ]}
+                  />
+                </Segment>
+                <Segment>
                   <h2>LANGUAGES</h2>
                   <List
                     items={[
