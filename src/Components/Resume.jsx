@@ -33,35 +33,52 @@ class Resume extends Component {
 
     return (
       <>
-        <Grid columns='equal'>
-          <Grid.Column>
-            <Segment>
-              <h2>CAREER OBJECTIVE</h2>
-              Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
-            </Segment>
-          </Grid.Column>
-          <Grid.Column width={5}>
-            <Segment>
-              <List>
-                {educationList}
-              </List>
-            </Segment>
-          </Grid.Column>
-          <Grid.Column>
-            <Segment>
-              <h2>TECHNICAL SKILLS</h2>
-              <List
-                items={[
-                  'JavaScript', 
-                  'Ruby', 
-                  'Test-Driven Development',
-                  'HTML & CSS',
-                  'Git/GitHub'
-                ]}
-              />
-            </Segment>
-          </Grid.Column>
-        </Grid>
+        <div id='resume-wrapper'>
+          <Grid columns='equal'>
+            <Grid.Row>
+              <Grid.Column>
+                <Segment>
+                  <h2>CAREER OBJECTIVE</h2>
+                  Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
+                </Segment>
+              </Grid.Column>
+              <Grid.Column width={5}>
+                <Segment>
+                  <List>
+                    {educationList}
+                  </List>
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment>
+                  <h2>TECHNICAL SKILLS</h2>
+                  <List
+                    items={[
+                      'JavaScript', 
+                      'Ruby', 
+                      'Test-Driven Development',
+                      'HTML & CSS',
+                      'Git/GitHub'
+                    ]}
+                  />
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <Segment>
+                  <h2>LANGUAGES</h2>
+                  <List
+                    items={[
+                      'German - Native',
+                      'English - Proficient'
+                    ]}
+                  />
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
       </>
     )
   }
