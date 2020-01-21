@@ -8,7 +8,8 @@ const Education = (props) => {
     <>
       <List.Item key={item.id}>
         <h3 className='resume-list-header'>{item.school}</h3>
-        <p>{item.location} - {item.degree}</p>
+        <p className='resume-info'>{item.location}</p>
+        <p className='resume-title'>- {item.degree}</p>
         <p className='resume-date'>{item.date}</p>
       </List.Item>
     </>
