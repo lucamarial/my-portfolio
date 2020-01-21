@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Education from './Education'
 import { Grid, Segment, List } from 'semantic-ui-react'
 import axios from 'axios'
 
@@ -21,6 +22,15 @@ class Resume extends Component {
   }
   
   render() {
+    const resume = this.state.resume
+    let educationList
+
+    if (resume) {
+			educationList = resume.education.map(item => {
+				return <Education item={item} />
+			})
+		}
+
     return (
       <>
         <Grid columns='equal'>
@@ -33,7 +43,7 @@ class Resume extends Component {
           <Grid.Column>
             <Segment>
               <List>
-
+                {educationList}
               </List>
             </Segment>
           </Grid.Column>
