@@ -6,7 +6,7 @@ const Education = (props) => {
 
   return (
     <>
-      <List.Item key={item.id}>
+      <List.Item key={item.id} className='education-list-item' id={item.id}>
         <h3 className='resume-list-header'>{item.school}</h3>
         <p className='resume-info'>{item.location}</p>
         <p className='resume-title'>- {item.degree}</p>
