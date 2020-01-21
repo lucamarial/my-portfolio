@@ -42,8 +42,9 @@ class Resume extends Component {
                   Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
                 </Segment>
               </Grid.Column>
-              <Grid.Column width={5}>
+              <Grid.Column width={6}>
                 <Segment>
+                  <h2>EDUCATION</h2>
                   <List>
                     {educationList}
                   </List>
@@ -62,10 +63,6 @@ class Resume extends Component {
                     ]}
                   />
                 </Segment>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
                 <Segment>
                   <h2>LANGUAGES</h2>
                   <List
