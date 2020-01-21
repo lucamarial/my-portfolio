@@ -10,6 +10,11 @@ const WorkExperience = (props) => {
         <h3>{item.company}</h3>
         <p>{item.location} - {item.title}</p>
         <p>{item.date}</p>
+        <p>Achievements/Tasks</p>
+        <List
+          items={item.tasks}
+          as='ol'
+        />
       </List.Item>
     </>
   )
