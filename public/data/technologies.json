@@ -9,7 +9,7 @@
     "RSpec"
   ],
   "dependencies": [
-    "Git/Github",
+    "Git/GitHub",
     "NPM",
     "NodeJS",
     "Webpack",
