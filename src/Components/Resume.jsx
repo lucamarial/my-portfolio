@@ -45,7 +45,7 @@ class Resume extends Component {
             <Grid.Row>
               <Grid.Column>
                 <Segment>
-                  <h2>CAREER OBJECTIVE</h2>
+                  <h2 className='resume-header'>CAREER OBJECTIVE</h2>
                   <p>
                     Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
                     <br /> 
@@ -53,7 +53,7 @@ class Resume extends Component {
                   </p>
                 </Segment>
                 <Segment>
-                  <h2>WORK EXPERIENCE</h2>
+                  <h2 className='resume-header'>WORK EXPERIENCE</h2>
                   <List>
                     {workExperience}
                   </List>
@@ -61,13 +61,13 @@ class Resume extends Component {
               </Grid.Column>
               <Grid.Column width={6}>
                 <Segment>
-                  <h2>EDUCATION</h2>
+                  <h2 className='resume-header'>EDUCATION</h2>
                   <List divided relaxed>
                     {educationList}
                   </List>
                 </Segment>
                 <Segment>
-                  <h2>HOBBIES</h2>
+                  <h2 className='resume-header'>HOBBIES</h2>
                   <List
                     items={[
                       'Traveling',
@@ -80,7 +80,7 @@ class Resume extends Component {
               </Grid.Column>
               <Grid.Column>
                 <Segment>
-                  <h2>TECHNICAL SKILLS</h2>
+                  <h2 className='resume-header'>TECHNICAL SKILLS</h2>
                   <List
                     items={[
                       'JavaScript', 
@@ -92,7 +92,7 @@ class Resume extends Component {
                   />
                 </Segment>
                 <Segment>
-                  <h2>SOFT SKILLS</h2>
+                  <h2 className='resume-header'>SOFT SKILLS</h2>
                   <List
                     items={[
                       'Teamwork',
@@ -103,7 +103,7 @@ class Resume extends Component {
                   />
                 </Segment>
                 <Segment>
-                  <h2>LANGUAGES</h2>
+                  <h2 className='resume-header'>LANGUAGES</h2>
                   <List
                     items={[
                       'German - Native',

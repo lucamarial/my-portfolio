@@ -403,6 +403,18 @@ footer {
   padding: 0 10%;
 }
 
+.resume-header {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 21px;
+  color: #ca8d22;
+}
+
+.resume-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #525252;
+}
+
 /* Contact */
 
 #contact-wrapper {
