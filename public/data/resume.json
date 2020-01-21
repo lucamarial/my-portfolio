@@ -21,5 +21,18 @@
       "degree": "High School Diploma",
       "date": "SEPTEMBER 2013 - APRIL 2015"
     }
-  ]
+  ],
+  "work": {
+    "company": "Wohnideen aus Meisterhand Peter Andrä",
+    "location": "Seeshaupt, Bavaria",
+    "title": "Interior decorator/upholsterer apprenticeship",
+    "date": "AUGUST 2016 - JANUARY 2019",
+    "tasks": [
+      "Meeting directly with clients to determine style, budget and needs",
+      "Installing and creating room decorations",
+      "Upholstering and covering upholstered furniture",
+      "Managing budgets and schedules throughout the decoration",
+      "Managing budgets and schedules throughout the decoration process to meet the clients expectations"
+    ]
+  }
 }
