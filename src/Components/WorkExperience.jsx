@@ -12,6 +12,7 @@ const WorkExperience = (props) => {
         <p className='resume-date'>{item.date}</p>
         <p>Achievements/Tasks</p>
         <List
+          className='resume-work-tasks'
           items={item.tasks}
           as='ol'
         />

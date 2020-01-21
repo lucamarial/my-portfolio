@@ -421,6 +421,14 @@ footer {
   color: #383838;
 }
 
+.resume-work-tasks > .item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px !important;
+  color: #383838;
+  list-style-type: square !important;
+  margin-left: 10px;
+}
+
 /* Contact */
 
 #contact-wrapper {
