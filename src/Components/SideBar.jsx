@@ -20,6 +20,12 @@ const SideBar = () => {
         />
         <Menu.Item
           className='menu-item'
+          name='Resume'
+          as={NavLink}
+          to='/resume'
+        />
+        <Menu.Item
+          className='menu-item'
           name='Projects'
           as={NavLink}
           to='/projects'
