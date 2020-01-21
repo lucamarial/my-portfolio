@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Education from './Education'
+import WorkExperience from './WorkExperience'
 import { Grid, Segment, List } from 'semantic-ui-react'
 import axios from 'axios'
 
@@ -23,13 +24,19 @@ class Resume extends Component {
   
   render() {
     const resume = this.state.resume
-    let educationList
+    let educationList, workExperience
 
     if (resume) {
 			educationList = resume.education.map(item => {
 				return <Education item={item} />
 			})
-		}
+    }
+    
+    if(resume) {
+      workExperience = resume.work.map(item => {
+        return <WorkExperience item={item} />
+      })
+    }
 
     return (
       <>
@@ -40,6 +47,9 @@ class Resume extends Component {
                 <Segment>
                   <h2>CAREER OBJECTIVE</h2>
                   Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
+                </Segment>
+                <Segment>
+                  {workExperience}
                 </Segment>
               </Grid.Column>
               <Grid.Column width={6}>
