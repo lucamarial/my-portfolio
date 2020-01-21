@@ -405,7 +405,7 @@ footer {
 
 .resume-header {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   color: #ca8d22;
 }
 
@@ -413,6 +413,12 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   color: #525252;
+}
+
+.resume-list-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color: #383838;
 }
 
 /* Contact */

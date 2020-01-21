@@ -7,7 +7,7 @@ const WorkExperience = (props) => {
   return (
     <>
       <List.Item key={item.id}>
-        <h3>{item.company}</h3>
+        <h3 className='resume-list-header'>{item.company}</h3>
         <p>{item.location} - {item.title}</p>
         <p className='resume-date'>{item.date}</p>
         <p>Achievements/Tasks</p>
