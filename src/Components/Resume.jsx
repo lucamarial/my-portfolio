@@ -1,7 +1,25 @@
 import React, { Component } from 'react'
-import { Grid, Segment } from 'semantic-ui-react'
+import { Grid, Segment, List } from 'semantic-ui-react'
+import axios from 'axios'
 
 class Resume extends Component {
+  state = {
+    resume: null
+  }
+
+  async componentDidMount() {
+    try { 
+      let response = await axios.get('/data/resume.json')
+      return (
+        this.setState({
+          resume: response.data
+        })
+      )
+    } catch(error) {
+      console.log(error)
+    }    
+  }
+  
   render() {
     return (
       <>
@@ -15,7 +33,7 @@ class Resume extends Component {
           <Grid.Column>
             <Segment>
               <List>
-                
+
               </List>
             </Segment>
           </Grid.Column>
