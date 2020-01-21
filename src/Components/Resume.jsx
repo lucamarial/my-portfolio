@@ -46,7 +46,7 @@ class Resume extends Component {
               <Grid.Column>
                 <Segment>
                   <h2 className='resume-header'>CAREER OBJECTIVE</h2>
-                  <p>
+                  <p className='resume-info'>
                     Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
                     <br /> 
                     I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
@@ -69,6 +69,7 @@ class Resume extends Component {
                 <Segment>
                   <h2 className='resume-header'>HOBBIES</h2>
                   <List
+                    className='resume-info'
                     items={[
                       'Traveling',
                       'Skiing',
@@ -82,6 +83,7 @@ class Resume extends Component {
                 <Segment>
                   <h2 className='resume-header'>TECHNICAL SKILLS</h2>
                   <List
+                    className='resume-info'
                     items={[
                       'JavaScript', 
                       'Ruby', 
@@ -94,6 +96,7 @@ class Resume extends Component {
                 <Segment>
                   <h2 className='resume-header'>SOFT SKILLS</h2>
                   <List
+                    className='resume-info'
                     items={[
                       'Teamwork',
                       'Logical/critical thinking',
@@ -105,6 +108,7 @@ class Resume extends Component {
                 <Segment>
                   <h2 className='resume-header'>LANGUAGES</h2>
                   <List
+                    className='resume-info'
                     items={[
                       'German - Native',
                       'English - Proficient'

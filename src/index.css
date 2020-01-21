@@ -429,6 +429,12 @@ footer {
   margin-left: 10px;
 }
 
+.resume-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px !important;
+  color: #383838;
+}
+
 /* Contact */
 
 #contact-wrapper {
