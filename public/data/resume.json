@@ -1,0 +1,25 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "school": "Craft Academy Coding Bootcamp",
+      "location": "Stockholm, Sweden",
+      "degree": "Certification Full-Stack Web Developer",
+      "date": "AUGUST 2019 - NOVEMBER 2019"
+    },
+    {
+      "id": 2,
+      "school": "Therese-von-Bayern School, a college of higher education for economics",
+      "location": "Munich, Bavaria",
+      "degree": "High School Diploma",
+      "date": "SEPTEMBER 2015 - JUNE 2016"
+    },
+    {
+      "id": 3,
+      "school": "Staatliche Fachoberschule, a college of higher education",
+      "location": "Bad-Tölz, Bavaria",
+      "degree": "High School Diploma",
+      "date": "SEPTEMBER 2013 - APRIL 2015"
+    }
+  ]
+}
