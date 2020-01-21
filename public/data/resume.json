@@ -1,0 +1,40 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "school": "Craft Academy Coding Bootcamp",
+      "location": "Stockholm, Sweden",
+      "degree": "Certification Full-Stack Web Developer",
+      "date": "AUGUST 2019 - NOVEMBER 2019"
+    },
+    {
+      "id": 2,
+      "school": "Therese-von-Bayern School, a college of higher education for economics",
+      "location": "Munich, Bavaria",
+      "degree": "High School Diploma",
+      "date": "SEPTEMBER 2015 - JUNE 2016"
+    },
+    {
+      "id": 3,
+      "school": "Staatliche Fachoberschule, a college of higher education",
+      "location": "Bad-Tölz, Bavaria",
+      "degree": "High School Diploma",
+      "date": "SEPTEMBER 2013 - APRIL 2015"
+    }
+  ],
+  "work": [
+    {
+      "id": 1,
+      "company": "Wohnideen aus Meisterhand Peter Andrä",
+      "location": "Seeshaupt, Bavaria",
+      "title": "Interior decorator/upholsterer apprenticeship",
+      "date": "AUGUST 2016 - JANUARY 2019",
+      "tasks": [
+        "Meeting directly with clients to determine style, budget and needs",
+        "Installing and creating room decorations",
+        "Upholstering and covering upholstered furniture",
+        "Managing budgets and schedules throughout the decoration process to meet the clients expectations"
+      ]
+    }
+  ]
+}

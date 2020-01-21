@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One|Montserrat:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One|Montserrat:300&display=swap');
 
 body {
   font-family: 'Arimo', sans-serif;
@@ -394,6 +394,68 @@ footer {
 
 .ui.divider {
   width: 4rem;
+}
+
+/* Resume */
+
+#resume-wrapper {
+  margin: 4rem 0 4rem 23rem;
+  padding: 0 10%;
+}
+
+.resume-header {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  color: #ca8d22;
+}
+
+.resume-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #525252;
+}
+
+.resume-list-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #383838;
+}
+
+.resume-work-tasks > .item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px !important;
+  color: #383838;
+  list-style-type: square !important;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.resume-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px !important;
+  color: #383838;
+  margin-bottom: 5px;
+}
+
+.resume-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px !important;
+  color: #383838;
+  font-style: italic;
+}
+
+.education-list-item {
+  padding: 18px 0 !important;
+}
+
+[id='1'].education-list-item {
+  padding-top: 0px !important;
+}
+
+.ui.teal.segment {
+  margin: 28px 0 !important;
+  background-color: #f5f6f788;
+  border: 1px solid #dddedf !important;
 }
 
 /* Contact */
