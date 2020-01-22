@@ -3,6 +3,7 @@ import HomeImg from '../Images/marocco-wall.jpg'
 import Bodensee from '../Images/bodensee.jpg'
 import Mosaic from '../Images/mosaic.jpg'
 import Technologies from './Technologies'
+import { Icon } from 'semantic-ui-react'
 
 const HomePage = () => {
   let homeImg = <img id='home-img' src={HomeImg} alt='Marocco' />
@@ -51,6 +52,14 @@ const HomePage = () => {
       <footer>
         <div id='footer-info'>
           <p>Copyright © 2020 Luca Maria Lobacher</p>
+          <p>
+            <a href='https://github.com/lucamarial'>
+              <Icon name='github' size='big' />
+            </a>
+            <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/'>
+              <Icon name='linkedin' size='big' />
+            </a>
+          </p>
         </div>
       </footer>
     </>
