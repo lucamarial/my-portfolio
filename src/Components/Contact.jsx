@@ -199,10 +199,14 @@ class Contact extends Component {
                   <hr />
                   <List horizontal>
                     <List.Item>
-                      <List.Icon name='github' size='huge' />
+                      <a href='https://github.com/lucamarial'>
+                        <List.Icon name='github' size='huge' />
+                      </a>
                     </List.Item>
                     <List.Item>
-                      <List.Icon name='linkedin' size='huge' />
+                      <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/'>
+                        <List.Icon name='linkedin' size='huge' />
+                      </a>
                     </List.Item>
                   </List>
                   <hr />
