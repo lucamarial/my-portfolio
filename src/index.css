@@ -154,6 +154,15 @@ footer {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
+  color: #525252;
+}
+
+#footer-info .icon {
+  color: #808984;
+}
+
+#footer-info .icon:hover {
+  color: #525252
 }
 
 /* Technologies */
