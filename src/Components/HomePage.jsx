@@ -27,7 +27,7 @@ const HomePage = () => {
         <div id='home-item-img'>{bodensee}</div>
         <div id='home-header'><p>Hi, I'm Luca!</p></div>
         <div id='home-intro'>
-          <p>For some time now, I've been learning both Front and Backend web development.
+          <p>For some time now, I've been learning both front and back end web development.
             During that time, I also discovered a growing interest for web design.
           </p>
           <p>Eager to learn, attentive, and curious.</p>
