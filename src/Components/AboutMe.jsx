@@ -16,9 +16,9 @@ const AboutMe = () => {
           <h2 id='about-header'>ABOUT</h2>
           <Divider section/>
           <div id='about-text'>
-            <p id='about-intro'>Yotec nisih tinanit rucila yetih do conule tusonu redil. Mo leri afoten enieb copeg no sesakim feruru.</p>
-            <p> Edietunu unefel tuyehie asinec unienu casiti. Rap vul vaca tanara folu recur keref ileso tigeg. Ho tie titi wan ronu oyifiger na pusep had! Meca tatama elet fap tienap cid ana laramec tu, biel ciemo sal ciret elowados?</p>
-            <p> Nowina dad xohonip lihu yot enonecuc. Nelice setegu sahilal te pep po tisepo voran! Tie ineti opunason detari cates site alelol muyesef ra boyiere? Ser kon ama odisis rer picol citera? Lito omurad sahal; laraya ateb oda okelam. Acetinal sotim lehide kip openaper pin cen di, kor arehiesat cavimel mie. Ronofif len tel arene ramatib fetono ve tahar ibemi ra. Tiererel nilahem ine samo. Gin pire osa luyu hilepat hanonit loru tasutu meha, vused dido do ceb epunebe ritorus tigus onie? Donila nid feno hetoneg asero can tehe zi sahadah redim.</p>
+            <p id='about-intro'>Hi I'm Luca, 23 years old from Germany.</p>
+            <p>Ever since programming caught my attention, I’ve been feeling the urge to learn about web development. I currently live in Stockholm, where I attended a coding Bootcamp for full stack web development. Once there, my interest peaked even further and I got especially hooked on the front-end side of things along with design.</p>
+            <p>So far I’ve been strictly working with test-driven development, along with the agile methodologies and scrum practices. I'm now excited to keep working on new projects and facing up to whatever challenges comes my way to learn and grow as a developer.</p>
           </div>
         </div>
       </div>

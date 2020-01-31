@@ -5,10 +5,10 @@ import Steps from '../Images/steps.jpg'
 
 class Contact extends Component {
   state = {
-    name: null,
-    email: null,
-    subject: null,
-    message: null,
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
     errors: {
       name: '',
       email: '',
@@ -74,12 +74,12 @@ class Contact extends Component {
     await this.setState({
       form: e.target,
       [e.target.name.name]: e.target.name.value,
-      [e.target.email.name]: e.target.subject.value,
+      [e.target.email.name]: e.target.email.value,
       [e.target.subject.name]: e.target.subject.value,
       [e.target.message.name]: e.target.message.value,
     })
 
-    if(this.validateForm(this.state.errors) && this.state.name !== null && this.state.email !== null && this.state.subject !== null && this.state.message !== null) {
+    if(this.validateForm(this.state.errors) && this.state.name !== '' && this.state.email !== '' && this.state.subject !== '' && this.state.message !== '') {
       this.sendEmail(this.state.form)
     } else {
       this.setState({
@@ -100,7 +100,11 @@ class Contact extends Component {
 			.then(
 				response => {
           this.setState({
-            responseMessage: 'Email was successfully sent!'
+            responseMessage: 'Email was successfully sent!',
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
           })
 					console.log(response.text)
 				},
@@ -151,6 +155,7 @@ class Contact extends Component {
                   <Form.Input
                     placeholder='Name'
                     name='name'
+                    value={this.state.name}
                     type='text'
                     error={errors.name ? {content: `${errors.name}`, pointing: 'below'} : null}
                     noValidate
@@ -159,6 +164,7 @@ class Contact extends Component {
                   <Form.Input
                     placeholder='Email'
                     name='email'
+                    value={this.state.email}
                     type='email'
                     error={errors.email ? {content: `${errors.email}`, pointing: 'below'} : null}
                     noValidate
@@ -167,6 +173,7 @@ class Contact extends Component {
                   <Form.Input
                     placeholder='Subject'
                     name='subject'
+                    value={this.state.subject}
                     type='text'
                     error={errors.subject ? {content: `${errors.subject}`, pointing: 'below'} : null}
                     noValidate
@@ -175,6 +182,7 @@ class Contact extends Component {
                   <Form.TextArea
                     placeholder='Message'
                     name='message'
+                    value={this.state.message}
                     error={errors.message ? {content: `${errors.message}`, pointing: 'below'} : null}
                     noValidate
                     onChange={this.inputHandler}
@@ -199,10 +207,14 @@ class Contact extends Component {
                   <hr />
                   <List horizontal>
                     <List.Item>
-                      <List.Icon name='github' size='huge' />
+                      <a href='https://github.com/lucamarial'>
+                        <List.Icon name='github' size='huge' />
+                      </a>
                     </List.Item>
                     <List.Item>
-                      <List.Icon name='linkedin' size='huge' />
+                      <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/'>
+                        <List.Icon name='linkedin' size='huge' />
+                      </a>
                     </List.Item>
                   </List>
                   <hr />
