@@ -30,7 +30,7 @@ const HomePage = () => {
           <p>For some time now, I've been learning both front and back end web development.
             During that time, I also discovered a growing interest for web design.
           </p>
-          <p>Eager to learn, attentive, and curious.</p>
+          <p>Eager to learn, attentive and curious.</p>
         </div>
       </div>
 
