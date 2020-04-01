@@ -10,6 +10,17 @@ import Contact from './Components/Contact'
 import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
+  state = {
+    sideBar: false
+  }
+
+  sidebarToggleHandler = () => {
+    this.setState((prevState) => {
+      return {
+        sideBar: !prevState.sideBar
+      }
+    })
+  }
 
   render() {
     return (
