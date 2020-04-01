@@ -33,8 +33,8 @@ class App extends Component {
 
     return (
       <>
-        <SideBarToggleButton />
         {sideBar}
+        <SideBarToggleButton  sidebarToggleHandler={this.sidebarToggleHandler} />
         {backdrop}
         <Switch>
           <Route exact path='/' component={HomePage} />

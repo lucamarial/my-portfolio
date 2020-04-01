@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SideBarToggleButton = () => {
+const SideBarToggleButton = props => {
   return (
     <>
-      <button className='toggle-button'>
+      <button className='toggle-button' onClick={props.sidebarToggleHandler}>
         <span className='toggle-button-line' />
         <span className='toggle-button-line' />
         <span className='toggle-button-line' />
