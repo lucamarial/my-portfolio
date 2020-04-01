@@ -22,6 +22,12 @@ class App extends Component {
     })
   }
 
+  backdropHandler = () => {
+    this.setState({
+      sideBarOpen: false
+    })
+  }
+
   render() {
     let sideBar;
     let backdrop;
