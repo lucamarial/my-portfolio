@@ -11,6 +11,31 @@ body {
   background-color: white;
 }
 
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 999;
+  position: absolute;
+  margin: 1em;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button .toggle-button-line {
+  width: 30px;
+  height: 3px;
+  background: #525252;
+}
+
 /* HomePage */
 
 #home-wrapper {
@@ -248,8 +273,6 @@ footer .container-social {
 .side-menu {
   height: 100%;
   padding: 2rem 0 0 2rem;
-  z-index: 1;
-  overflow-x: hidden;
   background-color: #f5f6f7 !important;
 }
 
