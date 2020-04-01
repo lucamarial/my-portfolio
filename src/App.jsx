@@ -34,6 +34,8 @@ class App extends Component {
     return (
       <>
         <SideBarToggleButton />
+        {sideBar}
+        {backdrop}
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/about' component={AboutMe} />
