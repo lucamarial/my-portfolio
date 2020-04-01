@@ -50,16 +50,16 @@ const HomePage = () => {
       <Technologies />
 
       <footer>
-        <div id='footer-info'>
+        <div className='footer-container'>
           <p>Copyright © 2020 Luca Maria Lobacher</p>
-          <p>
+          <div className='container-social'>
             <a href='https://github.com/lucamarial'>
               <Icon name='github' size='big' />
             </a>
             <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/'>
               <Icon name='linkedin' size='big' />
             </a>
-          </p>
+          </div>
         </div>
       </footer>
     </>
