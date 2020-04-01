@@ -11,23 +11,29 @@ import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   state = {
-    sideBar: false
+    sideBarOpen: false
   }
 
   sidebarToggleHandler = () => {
     this.setState((prevState) => {
       return {
-        sideBar: !prevState.sideBar
+        sideBarOpen: !prevState.sideBarOpen
       }
     })
   }
 
   render() {
+    let sideBar;
+    let backdrop;
+
+    if (this.state.sideBarOpen) {
+      sideBar = <SideBar />
+      backdrop = <Backdrop />
+    }
+
     return (
       <>
-        <SideBar />
         <SideBarToggleButton />
-        <Backdrop />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/about' component={AboutMe} />
