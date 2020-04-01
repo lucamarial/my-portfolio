@@ -141,28 +141,35 @@ body {
 footer {
   position: relative;
   margin: 10rem 0 0 23rem;
-  height: 250px;
+  padding: 4.5em 0;
   background: #fbfb97;
-  line-height: 50px;
+  text-align: center;
 }
 
-#footer-info {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  text-align: center;
+.footer-container {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
   color: #525252;
 }
 
-#footer-info .icon {
-  color: #808984;
+footer .container-social {
+  display: flex;
+  justify-content: center;
 }
 
-#footer-info .icon:hover {
-  color: #525252
+.footer-container a {
+  margin: 0 .5em;
+}
+
+.footer-container .icon {
+  color: #808984;
+  margin: 0;
+  transition: transform .2s;
+}
+
+.footer-container .icon:hover {
+  color: #525252;
+  transform: scale(1.5);
 }
 
 /* Technologies */
