@@ -34,7 +34,7 @@ class App extends Component {
 
     if (this.state.sideBarOpen) {
       sideBar = <SideBar />
-      backdrop = <Backdrop />
+      backdrop = <Backdrop backdropHandler={this.backdropHandler} />
     }
 
     return (
