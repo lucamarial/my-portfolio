@@ -2,10 +2,16 @@ import React from 'react'
 import { Menu } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom'
 
-const SideBar = () => {
+const SideBar = props => {
+  let sideBarClasses = 'side-menu'
+
+  if (props.show) {
+    sideBarClasses = 'side-menu open'
+  }
+
   return (
     <>
-      <Menu text vertical fixed='left' className='side-menu'>
+      <Menu text vertical fixed='left' className={sideBarClasses}>
         <Menu.Item header
           id='my-name'
           name='Luca Lobacher'

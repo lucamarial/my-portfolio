@@ -29,17 +29,15 @@ class App extends Component {
   }
 
   render() {
-    let sideBar;
     let backdrop;
 
     if (this.state.sideBarOpen) {
-      sideBar = <SideBar />
       backdrop = <Backdrop backdropHandler={this.backdropHandler} />
     }
 
     return (
       <>
-        {sideBar}
+        <SideBar show={this.state.sideBarOpen} />
         <SideBarToggleButton  sidebarToggleHandler={this.sidebarToggleHandler} />
         {backdrop}
         <Switch>
