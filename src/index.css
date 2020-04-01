@@ -175,7 +175,7 @@ footer .container-social {
 
 .tech-container {
   margin: 0 auto;
-  padding: 1.5em;
+  padding: 0 1.5em;
   width: 90%;
   max-width: 800px;
   background-color: #f5f6f788;
@@ -184,13 +184,19 @@ footer .container-social {
   box-shadow: 19px 30px 40px rgba(0, 0, 0, 0.082);
 }
 
+.tech-container .list-wrapper {
+  margin: 1.5em 0;
+}
+
 .tech-container .list-header {
+  margin-bottom: .5em;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5rem;
   color: #ca8d22;
 }
 
 .tech-container ul {
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -204,6 +210,24 @@ footer .container-social {
 .tech-container li {
   width: 27%;
   margin: 0 1em;
+}
+
+@media (max-width: 675px) {
+  .tech-container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .tech-container ul {
+    flex-flow: column nowrap;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .tech-container li {
+    width: 95%;
+    margin: 0;
+  }
 }
 
 /* SideBar */

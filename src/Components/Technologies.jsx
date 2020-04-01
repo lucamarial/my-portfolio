@@ -39,15 +39,15 @@ class Technologies extends Component {
 		return (
 			<>
 				<div className='tech-container'>
-					<div>
+					<div className='list-wrapper'>
 						<p className='list-header'>Frameworks / Libraries</p>
 						<ul>{frameworkList}</ul>
 					</div>
-					<div>
+					<div className='list-wrapper'>
 						<p className='list-header'>Soft Skills / Misc</p>
 						<ul>{skillList}</ul>
 					</div>
-					<div>
+					<div className='list-wrapper'>
 						<p className='list-header'>Dependencies etc</p>
 						<ul>{dependencyList}</ul>
 					</div>
