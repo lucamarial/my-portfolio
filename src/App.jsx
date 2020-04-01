@@ -1,5 +1,5 @@
 import React from 'react'
-import moduleName, { SideBarToggleButton } from './Components/SideBarToggleButton'
+import SideBarToggleButton from './Components/SideBarToggleButton'
 import SideBar from './Components/SideBar'
 import HomePage from './Components/HomePage'
 import AboutMe from './Components/AboutMe'
@@ -11,8 +11,8 @@ import { Switch, Route } from 'react-router-dom'
 const App = () => {
 	return (
     <>
-      <SideBarToggleButton />
       <SideBar />
+      <SideBarToggleButton />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/about' component={AboutMe} />
