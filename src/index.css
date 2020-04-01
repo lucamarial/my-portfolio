@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Arimo', sans-serif;
-  word-wrap: break-word;
   font-size: 120%;
   background-color: white;
 }
@@ -174,53 +173,37 @@ footer .container-social {
 
 /* Technologies */
 
-#tech-container {
-  margin: 8rem 0 0 23rem;
-  padding: 0 10%;
-}
-
-#tech-wrapper {
-  padding: 2rem;
+.tech-container {
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 90%;
+  max-width: 800px;
   background-color: #f5f6f788;
   border-radius: 12px;
   border: 1px solid #dddedf;
-  width: 48vw;
   box-shadow: 19px 30px 40px rgba(0, 0, 0, 0.082);
 }
 
-#framework-list {
-  margin: 1rem;
-  height: 17vh;
+.tech-container .list-header {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+  color: #ca8d22;
 }
 
-#skill-list {
-  margin: 1rem;
-  height: 14vh;
-}
-
-#dependency-list {
-  margin: 1rem;
-  height: 21vh;
-}
-
-.tech-point {
+.tech-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-left: .5em;
   list-style: square;
-  padding-left: 30px;
-}
-
-.tech-point > * {
-  display: list-item;
-  width: 33%;
-  float: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.275rem;
   color: #525252;
 }
 
-.list-header {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 21px;
-  color: #ca8d22;
+.tech-container li {
+  width: 27%;
+  margin: 0 1em;
 }
 
 /* SideBar */
