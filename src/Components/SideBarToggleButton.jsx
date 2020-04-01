@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const SideBarToggleButton = () => {
+const SideBarToggleButton = () => {
   return (
     <>
-      
+      <button className='toggle-button'>
+        <span className='toggle-button-line' />
+        <span className='toggle-button-line' />
+        <span className='toggle-button-line' />
+      </button>
     </>
   )
 }
+
+export default SideBarToggleButton
