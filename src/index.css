@@ -56,7 +56,7 @@ body {
   width: 100%;
   overflow: hidden;
   background: goldenrod;
-  background: -webkit-linear-gradient(rgba(94, 246, 163, 0.726), #ffff7ae1), url('./Images/marocco-wall.jpg');
+  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.287), #ffff7a93), url('./Images/marocco-wall.jpg');
   background-position: 50% 0;
   opacity: 0.8;
   background-size: cover;
@@ -72,13 +72,13 @@ body {
 
 #home-wrapper #text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 2.5rem;
+  font-size: 2.6875rem;
   margin: 0 0 .5em;
 }
 
 #home-wrapper #text-two {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.275rem;
+  font-size: 1.4375rem;
 }
 
 .draw {
@@ -120,11 +120,14 @@ body {
   background-color: #ffff99;
   height: 100%;
   width: 100%;
-  padding: 1em;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.4375rem;
-  color: #525252;
   text-align: center;
+}
+
+#home-header p {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 75px;
+  color: #525252;
 }
 
 #home-intro {
@@ -132,7 +135,7 @@ body {
   grid-column: 3/5;
   padding: 1.5em 0 1em 1em;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
@@ -156,12 +159,12 @@ body {
   transform: translate(-50%);
   color: #515151;
   background: rgba(255, 255, 255, 0.568);
-  padding: 20px;
+  padding: 1em;
 }
 
 #arrow-text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 #draw-two {
@@ -183,7 +186,7 @@ body {
   .draw {
     height: 20%;
   }
-  
+
   #draw-two {
     height: 20%;
   }
@@ -198,7 +201,7 @@ footer {
 
 .footer-container {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
@@ -242,7 +245,7 @@ footer .container-social {
 .tech-container .list-header {
   margin-bottom: .5em;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3125rem;
   color: #ca8d22;
 }
 
@@ -254,7 +257,7 @@ footer .container-social {
   padding-left: .5em;
   list-style: square;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.275rem;
+  font-size: 1.125rem;
   color: #525252;
 }
 
