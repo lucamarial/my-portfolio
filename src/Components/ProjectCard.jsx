@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     <>
       <Grid.Column>
         <div id='project-wrapper'>
-          <a href={project.link}>
+          <a href={project.link} target='_blank'>
             <img
               className='project-img'
               src={project.image}

@@ -53,10 +53,10 @@ const HomePage = () => {
         <div className='footer-container'>
           <p>Copyright © 2020 Luca Maria Lobacher</p>
           <div className='container-social'>
-            <a href='https://github.com/lucamarial'>
+            <a href='https://github.com/lucamarial' target='_blank'>
               <Icon name='github' size='big' />
             </a>
-            <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/'>
+            <a href='https://www.linkedin.com/in/luca-lobacher-9789021a0/' target='_blank'>
               <Icon name='linkedin' size='big' />
             </a>
           </div>
