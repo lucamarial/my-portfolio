@@ -1,19 +1,14 @@
 import React from 'react'
-import HomeImg from '../Images/marocco-wall.jpg'
 import Bodensee from '../Images/bodensee.jpg'
-import Mosaic from '../Images/mosaic.jpg'
 import Technologies from './Technologies'
 import { Icon } from 'semantic-ui-react'
 
 const HomePage = () => {
-  let homeImg = <img id='home-img' src={HomeImg} alt='Marocco' />
   let bodensee = <img id='bodensee-img' src={Bodensee} alt='Luca Lobacher' />
-  let mosaic = <img id='mosaic-img' src={Mosaic} alt='Mosaic' />
 
   return (
     <>
       <div id='home-wrapper'>
-        <div>{homeImg}</div>
         <div id='home-text'>
           <p id='text-one'>Front End Developer</p>
           <p id='text-two'>With a passion for design</p>
@@ -35,7 +30,6 @@ const HomePage = () => {
       </div>
 
       <div id='arrow-wrapper'>
-        {mosaic}
         <div id='arrow-text'>
           <p id='arrow-text-one'>Here are some technologies & methodologies I've worked with</p>
         </div>
