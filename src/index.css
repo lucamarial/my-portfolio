@@ -2,6 +2,7 @@
 
 html {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -51,34 +52,33 @@ body {
 #home-wrapper {
   text-align: center;
   position: relative;
-  height: 650px;
-}
-
-#home-wrapper #home-img {
-  height: 650px;
+  height: 85vh;
   width: 100%;
-  object-fit: cover;
+  overflow: hidden;
+  background: goldenrod;
+  background: -webkit-linear-gradient(rgba(94, 246, 163, 0.726), #ffff7ae1), url('./Images/marocco-wall.jpg');
+  background-position: 50% 0;
   opacity: 0.8;
-  object-position: 50% 0;
+  background-size: cover;
 }
 
 #home-wrapper #home-text {
   position: absolute;
-  top: 9.5em;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #515151;
 }
 
 #home-wrapper #text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 36px;
-  margin: 0 0 10px;
+  font-size: 2.5rem;
+  margin: 0 0 .5em;
 }
 
 #home-wrapper #text-two {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 1.275rem;
 }
 
 .draw {
@@ -109,7 +109,7 @@ body {
 
 #bodensee-img {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
   border: 20px solid #ffff99b2;
 }
@@ -120,9 +120,9 @@ body {
   background-color: #ffff99;
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 1em;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #525252;
   text-align: center;
 }
@@ -130,7 +130,7 @@ body {
 #home-intro {
   grid-row: 3/6;
   grid-column: 3/5;
-  padding: 2rem 0 1.5rem 1.5rem;
+  padding: 1.5em 0 1em 1em;
   font-family: 'Ibarra Real Nova', serif;
   font-size: 20px;
   color: #525252;
@@ -139,21 +139,21 @@ body {
 #arrow-wrapper {
   text-align: center;
   position: relative;
-  height: 650px;
-}
-
-#mosaic-img {
-  height: 650px;
+  height: 85vh;
   width: 100%;
-  object-fit: cover;
+  overflow: hidden;
+  background: teal;
+  background: -webkit-linear-gradient(rgba(94, 246, 163, 0.726), #ffff7ae1), url('./Images/mosaic.jpg');
+  background-position: 50% 0;
   opacity: 0.8;
+  background-size: cover;
 }
 
 #arrow-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   color: #515151;
   background: rgba(255, 255, 255, 0.568);
   padding: 20px;
