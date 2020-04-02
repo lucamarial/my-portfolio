@@ -175,6 +175,20 @@ body {
   fill: white;
 }
 
+@media (max-width: 675px) {
+  #home-wrapper, #arrow-wrapper {
+    height: 60vh;
+  }
+
+  .draw {
+    height: 20%;
+  }
+  
+  #draw-two {
+    height: 20%;
+  }
+}
+
 footer {
   position: relative;
   padding: 4.5em 0;
