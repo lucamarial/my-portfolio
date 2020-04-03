@@ -31,7 +31,7 @@ const HomePage = () => {
 
       <div id='arrow-wrapper'>
         <div id='arrow-text'>
-          <p id='arrow-text-one'>Here are some technologies & methodologies I've worked with</p>
+          <p id='arrow-text-one'><span>Here are some</span> <span>technologies & methodologies</span> <span>I've worked with</span></p>
         </div>
         <svg id='draw-two' width='100%' height='25%' viewBox='0 0 100 10' preserveAspectRatio='none'>
           <path id='path-two' d='M0,0 L50,10 100,0 Z' />
