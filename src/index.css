@@ -55,10 +55,10 @@ body {
   height: 85vh;
   width: 100%;
   overflow: hidden;
-  background: goldenrod;
-  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.287), #ffff7a93), url('./Images/marocco-wall.jpg');
-  background-position: 50% 0;
-  opacity: 0.8;
+  background: lightseagreen;
+  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.52), rgba(255, 202, 86, 0.603)), url('./Images/ceiling.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -148,7 +148,7 @@ body {
   background: teal;
   background: -webkit-linear-gradient(rgba(94, 246, 163, 0.726), #ffff7ae1), url('./Images/mosaic.jpg');
   background-position: 50% 0;
-  opacity: 0.8;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
