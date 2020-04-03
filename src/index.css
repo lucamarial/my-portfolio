@@ -269,6 +269,19 @@ footer .container-social {
   transform: scale(1.5);
 }
 
+@media (max-width: 675px) {
+  footer {
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 675px) and (orientation: portrait) {
+  .footer-container p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* Technologies */
 
 .tech-container {
