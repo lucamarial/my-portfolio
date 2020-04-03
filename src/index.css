@@ -179,12 +179,11 @@ body {
   fill: white;
 }
 
-@media (max-width: 675px) and (orientation: portrait) {
+@media (max-width: 675px) {
   #home-info-grid {
     margin: 4em auto;
     display: flex;
     flex-direction: column;
-    max-height: 95vh;
     overflow: hidden;
   }
 
@@ -222,6 +221,18 @@ body {
 
   #draw-two {
     height: 20%;
+  }
+}
+
+@media (max-width: 675px) and (orientation: portrait) {
+  #home-info-grid {
+    max-height: 95vh;
+  }
+}
+
+@media (max-width: 675px) and (orientation: landscape) {
+  #home-wrapper, #arrow-wrapper {
+    height: 100vh;
   }
 }
 
