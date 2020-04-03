@@ -179,6 +179,36 @@ body {
 }
 
 @media (max-width: 675px) {
+  #home-info-grid {
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home-header {
+    order: 0;
+  }
+
+  #home-header p {
+    line-height: 55px;
+  }
+
+  #home-item-img {
+    order: 2;
+    height: 12em;
+    margin-top: 1.275em;
+  }
+
+  #bodensee-img {
+    border: none;
+  }
+
+  #home-intro {
+    order: 1;
+    padding: 0;
+    margin-top: 1.275em;
+  }
+  
   #home-wrapper, #arrow-wrapper {
     height: 60vh;
   }
@@ -268,6 +298,7 @@ footer .container-social {
 
 @media (max-width: 675px) {
   .tech-container {
+    margin: 4em auto;
     text-align: center;
     padding: 0;
   }
