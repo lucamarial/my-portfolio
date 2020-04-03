@@ -111,6 +111,7 @@ body {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
+  position: 50% 50%;
   border: 20px solid #ffff99b2;
 }
 
@@ -178,11 +179,13 @@ body {
   fill: white;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 675px) and (orientation: portrait) {
   #home-info-grid {
     margin: 4em auto;
     display: flex;
     flex-direction: column;
+    max-height: 95vh;
+    overflow: hidden;
   }
 
   #home-header {
@@ -195,12 +198,12 @@ body {
 
   #home-item-img {
     order: 2;
-    height: 12em;
     margin-top: 1.275em;
   }
 
   #bodensee-img {
     border: none;
+    max-height: 20em;
   }
 
   #home-intro {
