@@ -45,7 +45,7 @@ const HomePage = () => {
 
       <footer>
         <div className='footer-container'>
-          <p>Copyright © 2020 Luca Maria Lobacher</p>
+          <p><span>Copyright © 2020</span> <span>Luca Maria Lobacher</span></p>
           <div className='container-social'>
             <a href='https://github.com/lucamarial' target='_blank'>
               <Icon name='github' size='big' />
