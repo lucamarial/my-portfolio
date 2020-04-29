@@ -46,11 +46,9 @@ class Projects extends Component {
           <p id='description-two'>Explore the portfolio</p>
         </div>
         
-        <Container className='page-content'>          
-          <Grid centered container columns={3}>
-            {projectsList}
-          </Grid>
-        </Container>
+        <Grid className='page-content' centered container columns={3}>
+          {projectsList}
+        </Grid>
       </>
     )
   }
