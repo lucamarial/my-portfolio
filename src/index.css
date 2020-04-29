@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One|Montserrat:300&display=swap');
 
+* {
+  overflow-x: hidden;
+}
+
 html {
   height: 100%;
   font-size: 16px;
@@ -441,7 +445,7 @@ footer .container-social {
 }
 
 #project-wrapper {
-  margin: 15px;
+  margin: 15px auto;
   position: relative;
 }
 
@@ -480,11 +484,6 @@ footer .container-social {
 .project-description {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 20px;
-}
-
-.ui.container.page-content {
-  display: block;
-  width: auto !important;
 }
 
 /* AboutMe */
