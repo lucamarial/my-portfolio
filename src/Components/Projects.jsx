@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ProjectCard from './ProjectCard'
 import { Container, Grid } from 'semantic-ui-react'
-import BackgroundImg from '../Images/lamps.jpg'
 
 class Projects extends Component {
   state = {
@@ -25,7 +24,6 @@ class Projects extends Component {
   render() {
     let projects = this.state.projects
     let projectsList
-    let backgroundImg = <img src={BackgroundImg} alt='Lamps' id='projects-background' />
     
     if (projects.length > 0) {
       projectsList = projects.map(project => {
@@ -40,20 +38,17 @@ class Projects extends Component {
     return (
       <>
         <div id='wrapper'>
-          {backgroundImg}
           <p id='image-text'>My Favorite Projects</p>
         </div>
 
         <div id='description-wrapper'>
-          <p className='description' id='description-one'>I work with passion on my projects.</p>
-          <p className='description' id='description-two'>Explore the portfolio</p>
+          <p id='description-one'>I work with passion on my projects.</p>
+          <p id='description-two'>Explore the portfolio</p>
         </div>
         
         <Container className='page-content'>          
           <Grid centered container columns={3}>
-            <Grid.Row>
-              {projectsList}
-            </Grid.Row>
+            {projectsList}
           </Grid>
         </Container>
       </>
