@@ -600,9 +600,10 @@ footer .container-social {
 
 /* Resume */
 
-#resume-wrapper {
-  margin: 4rem 0 4rem 23rem;
-  padding: 0 10%;
+.grid.resume {
+  margin: 2em auto;
+  width: 90%;
+  max-width: 980px;
 }
 
 .resume-header {
