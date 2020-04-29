@@ -444,6 +444,10 @@ footer .container-social {
   color: #525252;
 }
 
+.page-content {
+  margin: 1em 0 !important;
+}
+
 #project-wrapper {
   margin: 15px auto;
   position: relative;
@@ -468,7 +472,7 @@ footer .container-social {
 
 #project-wrapper:hover .project-img {
   opacity: 0.4;
-}
+}  
 
 .project-img {
   object-fit: cover;
@@ -484,6 +488,16 @@ footer .container-social {
 .project-description {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 20px;
+}
+
+@media not all and (hover: hover) {
+  #project-wrapper .project-text {
+    visibility: visible;
+  }
+
+  #project-wrapper .project-img {
+    opacity: 0.7;
+  }  
 }
 
 /* AboutMe */
