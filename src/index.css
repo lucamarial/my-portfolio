@@ -14,7 +14,6 @@ html {
 body {
   height: 100%;
   font-family: 'Arimo', sans-serif;
-  font-size: 120%;
   background-color: white;
 }
 
@@ -337,6 +336,7 @@ footer .container-social {
   list-style: square;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.125rem;
+  line-height: 1.5;
   color: #525252;
 }
 
@@ -368,24 +368,23 @@ footer .container-social {
 
 #my-name {
   font-family: 'Baskervville', serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #525252;
 }
 
 .menu-item {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: 'Julius Sans One', sans-serif;
 }
 
 .side-menu {
   height: 100%;
-  padding: 2rem 0 0 2rem;
+  padding: 2em 0 0 2em;
   background-color: #f5f6f7 !important;
   width: 70% !important;
   top: 0 !important;
   left: 0;
   max-width: 23em;
-  margin-right: 1rem !important;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.082) !important;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
@@ -416,19 +415,19 @@ footer .container-social {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: white;
 }
 
 #description-wrapper {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3.5em 0;
   overflow: hidden;
 }
 
 #description-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #808984;
 }
 
@@ -439,12 +438,12 @@ footer .container-social {
   height: 5rem;
   position: relative;
   left: 50%;
-  margin: 1rem 0;
+  margin: .75em 0;
 }
 
 #description-two {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
@@ -453,8 +452,11 @@ footer .container-social {
 }
 
 #project-wrapper {
-  margin: 15px auto;
+  margin: 1.085em auto;
   position: relative;
+  overflow: hidden;
+  height: 350px;
+  width: 350px;
 }
 
 #project-wrapper .project-text {
@@ -462,12 +464,12 @@ footer .container-social {
   top: 50%;
   transform: translateY(-50%);
   max-width: 100%;
-  max-height: 250px;
+  max-height: 330px;
   text-align: center;
   visibility: hidden;
   color: #383838;
   background-color: rgba(255, 255, 255, 0.609);
-  padding: 6px;
+  padding: .5em;
 }
 
 #project-wrapper:hover .project-text {
@@ -486,12 +488,12 @@ footer .container-social {
 
 .project-name {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .project-description {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 823px) and (orientation: landscape) {
@@ -544,7 +546,7 @@ footer .container-social {
 }
 
 #about-header {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'Julius Sans One', sans-serif;
   color: #ca8d22;
 }
@@ -552,7 +554,7 @@ footer .container-social {
 #about-text {
   color: #525252;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #about-intro {
@@ -560,7 +562,7 @@ footer .container-social {
 }
 
 .ui.divider {
-  width: 4rem;
+  width: 4em;
 }
 
 @media (max-width: 812px) {
@@ -630,47 +632,48 @@ footer .container-social {
 
 .resume-header {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ca8d22;
 }
 
 .resume-date {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #525252;
 }
 
 .resume-list-header {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #383838;
 }
 
 .resume-work-tasks > .item {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
+  line-height: 1.25 !important;
   color: #383838;
   list-style-type: square !important;
-  margin-left: 10px;
-  margin-bottom: 8px;
+  margin-left: .65em;
+  margin-bottom: .5em;
 }
 
 .resume-info {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: #383838;
-  margin-bottom: 5px;
+  margin-bottom: .325em;
 }
 
 .resume-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   color: #383838;
   font-style: italic;
 }
 
 .education-list-item {
-  padding: 18px 0 !important;
+  padding: 1.125em 0 !important;
 }
 
 [id='1'].education-list-item {
@@ -678,7 +681,7 @@ footer .container-social {
 }
 
 .ui.teal.segment {
-  margin: 28px 0 !important;
+  margin: 1.75em 0 !important;
   background-color: #f5f6f788;
   border: 1px solid #dddedf !important;
   box-sizing: border-box;
@@ -725,7 +728,7 @@ footer .container-social {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: white;
 }
 
@@ -761,23 +764,23 @@ footer .container-social {
 
 .contact-form input {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 
 .contact-form textarea {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 
 #contact-container h1 {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #ca8d22;
 }
 
 .contact-info {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #515151;
 }
 
