@@ -781,6 +781,13 @@ footer .container-social {
   color: #515151;
 }
 
+.contact-info hr {
+  height: 1px;
+  color: rgba(34,36,38,.15);
+  background-color: rgba(34,36,38,.15);
+  border: none;
+}
+
 .contact-info .contact-list i.icon {
   margin-right: .25em;
 }
@@ -817,5 +824,14 @@ footer .container-social {
 
   .contact-info .ui.horizontal.list>.item {
     font-size: .75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-container .grid {
+    width: 100vw !important;
+    border-radius: 0%;
+    border: hidden !important;
+    margin: 0 !important;
   }
 }
