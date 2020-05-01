@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 html {
@@ -735,12 +737,26 @@ footer .container-social {
 #contact-container .grid {
   width: 95% !important;
   max-width: 800px !important;
+  margin: 0 auto !important;
   background-color: #f5f6f7;
   position: relative;
   border-radius: 10px;
   padding: 1em 0;
   border: 1px solid #dddedf;
   overflow: hidden;
+}
+
+#contact-container .grid .row {
+  padding: 0;
+}
+
+#contact-container .grid .column {
+  min-width: 350px;
+  padding: 1em .75em !important;
+}
+
+#contact-container .grid .seven.wide.column {
+  min-width: 307px;
 }
 
 .contact-form input {
@@ -763,4 +779,31 @@ footer .container-social {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #515151;
+}
+
+.contact-info .contact-list i.icon {
+  margin-right: .25em;
+}
+
+.contact-info .ui.horizontal.list i.icon {
+  margin: 0;
+}
+
+@media (max-width: 693px) {
+  #contact-container .grid>.row {
+    flex-wrap: wrap-reverse;
+  }
+
+  #contact-container .grid .column {
+    width: 80% !important;
+    text-align: center;
+  }
+  
+  #contact-container .grid .seven.wide.column {
+    width: 80% !important;
+  }
+
+  .contact-info .ui.horizontal.list>.item {
+    font-size: .75rem !important;
+  }
 }
