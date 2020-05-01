@@ -794,6 +794,19 @@ footer .container-social {
 
 .contact-info .ui.horizontal.list i.icon {
   margin: 0;
+  transition: transform .2s;
+}
+
+.contact-info .ui.horizontal.list i.icon:hover {
+  transform: scale(1.25);
+}
+
+.contact-info .ui.horizontal.list a {
+  color: #ca8c22b0;
+}
+
+.contact-info .ui.horizontal.list a:hover {
+  color: #ca8c22;
 }
 
 @media (max-width: 812px) {
