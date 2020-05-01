@@ -1,46 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Arimo|Dancing+Script|Ibarra+Real+Nova|Julius+Sans+One|Montserrat:300&display=swap');
 
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
 body {
+  height: 100%;
   font-family: 'Arimo', sans-serif;
-  word-wrap: break-word;
-  font-size: 120%;
   background-color: white;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button .toggle-button-line {
+  width: 30px;
+  height: 3px;
+  background: #525252;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.287);
+  z-index: 50;
+  top: 0;
+  left: 0;
 }
 
 /* HomePage */
 
 #home-wrapper {
-  margin-left: 23rem;
   text-align: center;
   position: relative;
-  height: 650px;
-}
-
-#home-wrapper #home-img {
-  height: 650px;
+  height: 85vh;
   width: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-  object-position: 50% 0;
+  overflow: hidden;
+  background: lightseagreen;
+  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.52), rgba(255, 202, 86, 0.603)), url('./Images/ceiling.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home-wrapper #home-text {
   position: absolute;
-  top: 125px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #515151;
 }
 
 #home-wrapper #text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 36px;
-  margin: 0 0 10px;
+  font-size: 2.6875rem;
+  margin: 0 0 .5em;
 }
 
 #home-wrapper #text-two {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 1.4375rem;
 }
 
 .draw {
@@ -55,24 +100,26 @@ body {
 }
 
 #home-info-grid {
-  display: block;
-  margin-left: 23rem;
-  padding: 10rem 15%;
+  width: 90%;
+  max-width: 980px;
+  margin: 7em auto;
   display: grid;
   grid-template-rows: 55px 75px repeat(3, 100px);
   grid-template-columns: 1.75fr 0.5fr 2fr 0.75fr;
-  gap: 15px;
+  gap: 1em;
 }
 
 #home-item-img {
   grid-row: 1/6;
   grid-column: 1/3;
+  overflow: hidden;
 }
 
 #bodensee-img {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
+  position: 50% 50%;
   border: 20px solid #ffff99b2;
 }
 
@@ -82,49 +129,51 @@ body {
   background-color: #ffff99;
   height: 100%;
   width: 100%;
-  padding: 20px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 23px;
-  color: #525252;
   text-align: center;
+}
+
+#home-header p {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 75px;
+  color: #525252;
 }
 
 #home-intro {
   grid-row: 3/6;
   grid-column: 3/5;
-  padding: 2rem 0 1.5rem 1.5rem;
+  padding: 1.5em 0 1em 1em;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
 #arrow-wrapper {
-  margin-left: 23rem;
   text-align: center;
   position: relative;
-  height: 650px;
-}
-
-#mosaic-img {
-  height: 650px;
+  height: 85vh;
   width: 100%;
-  object-fit: cover;
-  opacity: 0.8;
+  overflow: hidden;
+  background: teal;
+  background: -webkit-linear-gradient(rgba(94, 246, 163, 0.726), #ffff7ae1), url('./Images/mosaic.jpg');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #arrow-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #515151;
   background: rgba(255, 255, 255, 0.568);
-  padding: 20px;
+  padding: 1em;
 }
 
 #arrow-text-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 #draw-two {
@@ -138,124 +187,226 @@ body {
   fill: white;
 }
 
-footer {
-  position: relative;
-  margin: 10rem 0 0 23rem;
-  height: 250px;
-  background: #fbfb97;
-  line-height: 50px;
+@media (max-width: 675px) {
+  #home-info-grid {
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #home-header {
+    order: 0;
+  }
+
+  #home-header p {
+    line-height: 55px;
+  }
+
+  #home-item-img {
+    order: 2;
+    margin-top: 1.275em;
+  }
+
+  #bodensee-img {
+    border: none;
+    max-height: 20em;
+  }
+
+  #home-intro {
+    order: 1;
+    padding: 0;
+    margin-top: 1.275em;
+  }
+  
+  #home-wrapper, #arrow-wrapper {
+    height: 60vh;
+  }
+
+  .draw {
+    height: 20%;
+  }
+
+  #draw-two {
+    height: 20%;
+  }
+
+  #arrow-text {
+    padding: .5em;
+  }
+
+  #arrow-text-one {
+    font-size: 1.25rem;
+  }
 }
 
-#footer-info {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+@media (max-width: 675px) and (orientation: portrait) {
+  #home-info-grid {
+    max-height: 95vh;
+  }
+}
+
+@media (max-width: 675px) and (orientation: landscape) {
+  #home-wrapper, #arrow-wrapper {
+    height: 100vh;
+  }
+
+  #arrow-text-one {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  position: relative;
+  padding: 4.5em 0;
+  background: #fbfb97;
   text-align: center;
+}
+
+.footer-container {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
-#footer-info .icon {
-  color: #808984;
+footer .container-social {
+  display: flex;
+  justify-content: center;
 }
 
-#footer-info .icon:hover {
-  color: #525252
+.footer-container a {
+  margin: 0 .5em;
+}
+
+.footer-container .icon {
+  color: #808984;
+  margin: 0;
+  transition: transform .2s;
+}
+
+.footer-container .icon:hover {
+  color: #525252;
+  transform: scale(1.5);
+}
+
+@media (max-width: 675px) {
+  footer {
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 675px) and (orientation: portrait) {
+  .footer-container p {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Technologies */
 
-#tech-container {
-  margin: 8rem 0 0 23rem;
-  padding: 0 10%;
-}
-
-#tech-wrapper {
-  padding: 2rem;
+.tech-container {
+  margin: 7em auto;
+  padding: .5em 2em;
+  width: 90%;
+  max-width: 875px;
   background-color: #f5f6f788;
   border-radius: 12px;
   border: 1px solid #dddedf;
-  width: 48vw;
   box-shadow: 19px 30px 40px rgba(0, 0, 0, 0.082);
 }
 
-#framework-list {
-  margin: 1rem;
-  height: 17vh;
+.tech-container .list-wrapper {
+  margin: 1.5em 0;
 }
 
-#skill-list {
-  margin: 1rem;
-  height: 14vh;
+.tech-container .list-header {
+  margin-bottom: .5em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.3125rem;
+  color: #ca8d22;
 }
 
-#dependency-list {
-  margin: 1rem;
-  height: 21vh;
-}
-
-.tech-point {
+.tech-container ul {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-left: .5em;
   list-style: square;
-  padding-left: 30px;
-}
-
-.tech-point > * {
-  display: list-item;
-  width: 33%;
-  float: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5;
   color: #525252;
 }
 
-.list-header {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 21px;
-  color: #ca8d22;
+.tech-container li {
+  width: 27%;
+  margin: 0 1em;
+}
+
+@media (max-width: 675px) {
+  .tech-container {
+    margin: 4em auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .tech-container ul {
+    flex-flow: column nowrap;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .tech-container li {
+    width: 95%;
+    margin: 0;
+  }
 }
 
 /* SideBar */
 
 #my-name {
   font-family: 'Baskervville', serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #525252;
 }
 
 .menu-item {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: 'Julius Sans One', sans-serif;
 }
 
 .side-menu {
   height: 100%;
-  padding: 2rem 0 0 2rem;
-  z-index: 1;
-  overflow-x: hidden;
+  padding: 2em 0 0 2em;
   background-color: #f5f6f7 !important;
+  width: 70% !important;
+  top: 0 !important;
+  left: 0;
+  max-width: 23em;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.082) !important;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
 }
 
-.ui.vertical.menu {
-  width: 23rem !important;
-  margin-right: 1rem !important;
+.side-menu.open {
+  transform: translateX(0);
 }
 
 /* Projects */
 
 #wrapper {
-  margin-left: 23rem;
-  text-align: center;
-  position: relative;
-}
-
-#projects-background {
-  object-fit: cover;
-  object-position: 50% 92%;
   width: 100%;
   height: 480px;
-  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: lightseagreen;
+  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.52), rgba(255, 202, 86, 0.603)), url('./Images/lamps.jpg');
+  background-position: 50% 92%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #wrapper #image-text {
@@ -264,22 +415,19 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: white;
 }
 
 #description-wrapper {
   text-align: center;
-  margin: 3rem 0;
-}
-
-.description {
-  margin-left: 23rem;
+  margin: 3.5em 0;
+  overflow: hidden;
 }
 
 #description-one {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #808984;
 }
 
@@ -290,18 +438,25 @@ footer {
   height: 5rem;
   position: relative;
   left: 50%;
-  margin: 1rem 0 1rem 0
+  margin: .75em 0;
 }
 
 #description-two {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #525252;
 }
 
+.page-content {
+  margin: 1em 0 !important;
+}
+
 #project-wrapper {
-  margin: 15px;
+  margin: 1.085em auto;
   position: relative;
+  overflow: hidden;
+  height: 350px;
+  width: 350px;
 }
 
 #project-wrapper .project-text {
@@ -309,12 +464,12 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   max-width: 100%;
-  max-height: 250px;
+  max-height: 330px;
   text-align: center;
   visibility: hidden;
   color: #383838;
   background-color: rgba(255, 255, 255, 0.609);
-  padding: 6px;
+  padding: .5em;
 }
 
 #project-wrapper:hover .project-text {
@@ -323,7 +478,7 @@ footer {
 
 #project-wrapper:hover .project-img {
   opacity: 0.4;
-}
+}  
 
 .project-img {
   object-fit: cover;
@@ -333,47 +488,51 @@ footer {
 
 .project-name {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .project-description {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-.ui.container.page-content {
-  margin-left: 23rem !important;
-  display: block;
-  width: auto !important;
+@media (max-width: 823px) and (orientation: landscape) {
+  #wrapper {
+    height: 100vh;
+  }
+}
+
+@media not all and (hover: hover) {
+  #project-wrapper .project-text {
+    visibility: visible;
+  }
+
+  #project-wrapper .project-img {
+    opacity: 0.7;
+  }  
 }
 
 /* AboutMe */
 
 #grid-container {
-  display: block;
-  margin-left: 23rem;
-  padding: 4rem 10%;
   display: grid;
+  margin: 4em auto;
+  width: 90%;
+  max-width: 980px;
   grid-template-rows: repeat(6, 75px) repeat(3, 90px);
-  grid-template-columns: 25% repeat(3, 95px) 40%;
-  gap: 15px;
-}
-
-#item-img-one {
-  grid-row: 3/9;
-  grid-column: 1/3;
+  grid-template-columns: 25% repeat(3, 90px) 40%;
+  gap: 1em;
 }
 
 #about-img-one {
-  object-position: 74% 50%;
-}
-
-#item-img-two {
-  grid-row: 7/10;
-  grid-column: 2/5;
+  grid-row: 4/9;
+  grid-column: 1/3;
+  object-position: 90% 50%;
 }
 
 .about-img {
+  grid-row: 7/10;
+  grid-column: 2/5;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -383,11 +542,11 @@ footer {
 #item-text {
   grid-row: 1/7;
   grid-column: 3/6;
-  padding: 0 0 1rem 2rem;
+  padding: 0 1em 1.5em;
 }
 
 #about-header {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'Julius Sans One', sans-serif;
   color: #ca8d22;
 }
@@ -395,7 +554,7 @@ footer {
 #about-text {
   color: #525252;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #about-intro {
@@ -403,59 +562,118 @@ footer {
 }
 
 .ui.divider {
-  width: 4rem;
+  width: 4em;
+}
+
+@media (max-width: 812px) {
+  #grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #item-text {
+    width: 100%;
+    padding: 0 0 1.5em 0;
+  }
+
+  #about-img-one {
+    width: 48%;
+    border: hidden;
+  }
+
+  .about-img {
+    width: 48%;
+    height: 20em;
+    object-position: 100% 50%;
+    border: hidden;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  #about-img-one {
+    height: 90vh;
+    object-position: 100%;
+  }
+
+  .about-img {
+    height: 90vh;
+    object-position: 100% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-img-one {
+    width: 100%;
+    height: 15em;
+    margin-bottom: 1em;
+    object-position: 100%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 15em;
+    object-position: 100% 0;
+  }
 }
 
 /* Resume */
 
-#resume-wrapper {
-  margin: 4rem 0 4rem 23rem;
-  padding: 0 10%;
+.grid.resume {
+  margin: 2em auto;
+  width: 90%;
+  max-width: 980px;
+  align-items: flex-start;
+}
+
+.grid>.column {
+  min-width: 15em;
 }
 
 .resume-header {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ca8d22;
 }
 
 .resume-date {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #525252;
 }
 
 .resume-list-header {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #383838;
 }
 
 .resume-work-tasks > .item {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
+  line-height: 1.25 !important;
   color: #383838;
   list-style-type: square !important;
-  margin-left: 10px;
-  margin-bottom: 8px;
+  margin-left: .65em;
+  margin-bottom: .5em;
 }
 
 .resume-info {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: #383838;
-  margin-bottom: 5px;
+  margin-bottom: .325em;
 }
 
 .resume-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   color: #383838;
   font-style: italic;
 }
 
 .education-list-item {
-  padding: 18px 0 !important;
+  padding: 1.125em 0 !important;
 }
 
 [id='1'].education-list-item {
@@ -463,25 +681,45 @@ footer {
 }
 
 .ui.teal.segment {
-  margin: 28px 0 !important;
+  margin: 1.75em 0 !important;
   background-color: #f5f6f788;
   border: 1px solid #dddedf !important;
+  box-sizing: border-box;
+  min-width: 15em;
+}
+
+@media (max-width: 1023px) {
+  .grid.resume {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .grid.resume>.column {
+    padding: 0 !important;
+    width: 55vw !important;
+  }
+
+  .ui.grid>[class*="six wide"].column {
+    width: 55vw !important;
+  }
+  .ui.teal.segment {
+    margin-bottom: 0 !important;
+  }
 }
 
 /* Contact */
 
 #contact-wrapper {
-  margin-left: 23rem;
-  text-align: center;
-  position: relative;
-}
-
-#contact-img {
-  object-fit: cover;
-  object-position: 50% 85%;
   width: 100%;
   height: 350px;
-  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: lightseagreen;
+  background: -webkit-linear-gradient(rgba(94, 246, 162, 0.52), rgba(255, 202, 86, 0.603)), url('./Images/steps.jpg');
+  background-position: 50% 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact-image-text {
@@ -490,43 +728,126 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: white;
 }
 
 #contact-container {
-  margin: 6rem 0 4rem 23rem !important;
-  display: block;
+  margin: 5em auto !important;
   width: auto !important;
 }
 
 #contact-container .grid {
-  width: 40vw !important;
+  width: 95% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
   background-color: #f5f6f7;
   position: relative;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1em 0;
   border: 1px solid #dddedf;
+  overflow: hidden;
+}
+
+#contact-container .grid .row {
+  padding: 0;
+}
+
+#contact-container .grid .column {
+  min-width: 350px;
+  padding: 1em .75em !important;
+}
+
+#contact-container .grid .seven.wide.column {
+  min-width: 307px;
 }
 
 .contact-form input {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 
 .contact-form textarea {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 
 #contact-container h1 {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #ca8d22;
 }
 
 .contact-info {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #515151;
+}
+
+.contact-info hr {
+  height: 1px;
+  color: rgba(34,36,38,.15);
+  background-color: rgba(34,36,38,.15);
+  border: none;
+}
+
+.contact-info .contact-list i.icon {
+  margin-right: .25em;
+}
+
+.contact-info .ui.horizontal.list i.icon {
+  margin: 0;
+  transition: transform .2s;
+}
+
+.contact-info .ui.horizontal.list i.icon:hover {
+  transform: scale(1.25);
+}
+
+.contact-info .ui.horizontal.list a {
+  color: #ca8c22b0;
+}
+
+.contact-info .ui.horizontal.list a:hover {
+  color: #ca8c22;
+}
+
+@media (max-width: 812px) {
+  #contact-container {
+    margin: 3.5em auto !important;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  #contact-wrapper {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 693px) {
+  #contact-container .grid>.row {
+    flex-wrap: wrap-reverse;
+  }
+
+  #contact-container .grid .column {
+    width: 80% !important;
+    text-align: center;
+  }
+  
+  #contact-container .grid .seven.wide.column {
+    width: 80% !important;
+  }
+
+  .contact-info .ui.horizontal.list>.item {
+    font-size: .75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-container .grid {
+    width: 100vw !important;
+    border-radius: 0%;
+    border: hidden !important;
+    margin: 0 !important;
+  }
 }
