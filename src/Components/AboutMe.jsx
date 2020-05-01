@@ -10,8 +10,6 @@ const AboutMe = () => {
   return (
     <>
       <div id='grid-container'>
-        <div id='item-img-one'>{myPicture}</div>
-        <div id='item-img-two'>{lucaPicture}</div>
         <div id='item-text'>
           <h2 id='about-header'>ABOUT</h2>
           <Divider section/>
@@ -21,6 +19,9 @@ const AboutMe = () => {
             <p>So far I’ve been strictly working with test-driven development, along with the agile methodologies and scrum practices. I'm now excited to keep working on new projects and facing up to whatever challenges comes my way to learn and grow as a developer.</p>
           </div>
         </div>
+
+        {myPicture}
+        {lucaPicture}
       </div>
     </>
   )
