@@ -730,7 +730,7 @@ footer .container-social {
 }
 
 #contact-container {
-  margin: 6rem auto !important;
+  margin: 5em auto !important;
   width: auto !important;
 }
 
@@ -787,6 +787,18 @@ footer .container-social {
 
 .contact-info .ui.horizontal.list i.icon {
   margin: 0;
+}
+
+@media (max-width: 812px) {
+  #contact-container {
+    margin: 3.5em auto !important;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  #contact-wrapper {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 693px) {
