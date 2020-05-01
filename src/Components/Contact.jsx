@@ -192,7 +192,7 @@ class Contact extends Component {
                   <Button type='submit' content='Send' />
                 </Form>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={7}>
                 <div className='contact-info'>
                   <List>
                     <List.Item>
