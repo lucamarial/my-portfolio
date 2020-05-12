@@ -40,7 +40,7 @@ class Resume extends Component {
 
     return (
       <>
-        <Grid className='grid resume' columns='equal'>
+        <Grid className='grid resume' columns='equal' data-aos='fade-left'>
           <Grid.Column>
             <Segment color='teal'>
               <h2 className='resume-header'>Career Objective</h2>

@@ -20,25 +20,25 @@ class Technologies extends Component {
 
 		if (data) {
 			frameworkList = data.frameworks.map(framework => {
-				return <li>{framework}</li>
+				return <li key={data.frameworks.indexOf(framework)}>{framework}</li>
 			})
 		}
 
 		if (data) {
 			skillList = data.softSkills.map(skill => {
-				return <li>{skill}</li>
+				return <li key={data.softSkills.indexOf(skill)}>{skill}</li>
 			})
 		}
 
 		if (data) {
 			dependencyList = data.dependencies.map(dependency => {
-				return <li>{dependency}</li>
+				return <li key={data.dependencies.indexOf(dependency)}>{dependency}</li>
 			})
 		}
 
 		return (
 			<>
-				<div className='tech-container'>
+				<div className='tech-container' data-aos='fade-right'>
 					<div className='list-wrapper'>
 						<p className='list-header'>Frameworks / Libraries</p>
 						<ul>{frameworkList}</ul>

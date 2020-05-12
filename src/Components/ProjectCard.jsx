@@ -3,10 +3,21 @@ import { Grid } from 'semantic-ui-react'
 
 const ProjectCard = (props) => {
   let project = props.project
+  let aosEffect
+
+  if(window.innerWidth <= 823) {
+    if (project.id % 2 == 0) {
+      aosEffect = 'fade-left'
+    } else {
+      aosEffect = 'fade-right'
+    }
+  } else {
+    aosEffect = 'fade-in'
+  }
 
   return (
     <>
-      <Grid.Column>
+      <Grid.Column data-aos={aosEffect}>
         <div id='project-wrapper'>
           <a href={project.link} target='_blank'>
             <img
