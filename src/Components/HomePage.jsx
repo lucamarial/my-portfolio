@@ -18,7 +18,7 @@ const HomePage = () => {
         </svg>
       </div>
 
-      <div id='home-info-grid'>
+      <div id='home-info-grid' data-aos='fade-left'>
         <div id='home-item-img'>{bodensee}</div>
         <div id='home-header'><p>Hi, I'm Luca!</p></div>
         <div id='home-intro'>

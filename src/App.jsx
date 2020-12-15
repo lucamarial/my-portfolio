@@ -8,6 +8,8 @@ import Resume from './Components/Resume'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import { Switch, Route } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 class App extends Component {
   state = {
@@ -29,6 +31,11 @@ class App extends Component {
   }
 
   render() {
+    AOS.init({
+      duration: 1000,
+      mirror: true
+    })
+  
     let backdrop;
 
     if (this.state.sideBarOpen) {
