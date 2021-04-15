@@ -45,7 +45,7 @@ class Resume extends Component {
             <Segment color='teal'>
               <h2 className='resume-header'>Career Objective</h2>
               <p className='resume-info'>
-                Quality-oriented recent graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
+                Quality-oriented graduate as a developer from Craft Academy coding Bootcamp seeking new opportunities. 
                 <br /> 
                 I have practical experience working with Ruby on Rails and ReactJS. Looking to learn and grow as a developer.
               </p>
